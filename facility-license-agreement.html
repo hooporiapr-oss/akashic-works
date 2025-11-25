@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility License Agreement - Akashic Works</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1034 50%, #2d1b4e 100%);
+            min-height: 100vh;
+            color: #e8e8f0;
+            padding: 20px;
+        }
+        .lang-toggle {
+            position: fixed; top: 20px; right: 20px; z-index: 1000; display: flex; gap: 5px;
+            background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 25px;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+        }
+        .lang-btn {
+            padding: 10px 15px; border: none; border-radius: 20px; cursor: pointer;
+            font-size: 1em; font-family: 'Georgia', serif; transition: all 0.3s ease;
+            background: transparent; color: #b8b8cc;
+        }
+        .lang-btn.active { background: linear-gradient(135deg, #ffd700, #ff8c00); color: #1a1034; font-weight: bold; }
+        .container {
+            max-width: 900px; margin: 80px auto 40px; background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px); border: 3px solid rgba(212, 175, 55, 0.5);
+            border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+        }
+        .back-link {
+            display: inline-block; margin-bottom: 30px; color: #ffd700;
+            text-decoration: none; font-size: 1.1em; transition: all 0.3s ease;
+        }
+        .back-link:hover { color: #ff8c00; transform: translateX(-5px); }
+        h1 { font-size: 2.5em; color: #ffd700; margin-bottom: 10px; text-align: center; }
+        .last-updated { text-align: center; color: #b8b8cc; font-style: italic; margin-bottom: 40px; font-size: 0.95em; }
+        h2 { font-size: 1.8em; color: #ffd700; margin-top: 40px; margin-bottom: 20px; }
+        h3 { font-size: 1.3em; color: #d4af37; margin-top: 25px; margin-bottom: 15px; }
+        p { line-height: 1.8; color: #c4c4d8; margin-bottom: 15px; }
+        ul, ol { margin-left: 30px; margin-bottom: 15px; }
+        li { line-height: 1.8; color: #c4c4d8; margin-bottom: 10px; }
+        strong { color: #ffd700; }
+        a { color: #ffd700; text-decoration: none; }
+        a:hover { color: #ff8c00; text-decoration: underline; }
+        .section { margin-bottom: 30px; }
+        @media (max-width: 768px) {
+            .container { padding: 25px; margin-top: 70px; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle">
+        <button class="lang-btn active" id="langEN" onclick="setLanguage('en')">🇺🇸 English</button>
+        <button class="lang-btn" id="langES" onclick="setLanguage('es')">🇵🇷 Español</button>
+    </div>
+
+    <div class="container">
+        <a href="healthcare-facilities.html" class="back-link" data-en="← Back to Facility Plans" data-es="← Volver a Planes para Centros"></a>
+
+        <h1 data-en="Facility License Agreement" data-es="Acuerdo de Licencia para Centros"></h1>
+        <p class="last-updated" data-en="Last Updated: November 25, 2024" data-es="Última Actualización: 25 de Noviembre, 2024"></p>
+
+        <div class="section">
+            <p data-en="This Facility License Agreement ('Agreement') is entered into between Akashic Works ('Licensor') and the subscribing healthcare facility ('Licensee'). By purchasing a Facility Plan, Licensee agrees to the following terms:"
+               data-es="Este Acuerdo de Licencia para Centros ('Acuerdo') se establece entre Akashic Works ('Licenciante') y el centro de salud suscriptor ('Licenciatario'). Al comprar un Plan para Centros, el Licenciatario acepta los siguientes términos:"></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="1. License Grant" data-es="1. Concesión de Licencia"></h2>
+            <p data-en="Akashic Works grants Licensee a non-exclusive, non-transferable license to use the cognitive training software for the sole benefit of residents within Licensee's facility during the subscription term."
+               data-es="Akashic Works concede al Licenciatario una licencia no exclusiva e intransferible para usar el software de entrenamiento cognitivo para el único beneficio de residentes dentro del centro del Licenciatario durante el término de suscripción."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="2. Facility Plan Tiers" data-es="2. Niveles de Plan para Centros"></h2>
+            <ul>
+                <li data-en="<strong>Starter:</strong> Up to 25 residents - $499/year" 
+                    data-es="<strong>Básico:</strong> Hasta 25 residentes - $499/año"></li>
+                <li data-en="<strong>Standard:</strong> Up to 75 residents - $999/year" 
+                    data-es="<strong>Estándar:</strong> Hasta 75 residentes - $999/año"></li>
+                <li data-en="<strong>Premium:</strong> Up to 200 residents - $1,999/year" 
+                    data-es="<strong>Premium:</strong> Hasta 200 residentes - $1,999/año"></li>
+                <li data-en="<strong>Enterprise:</strong> 200+ residents - Custom pricing" 
+                    data-es="<strong>Empresarial:</strong> 200+ residentes - Precio personalizado"></li>
+            </ul>
+            <p data-en="Licensee must select the appropriate tier based on their total resident capacity. Exceeding the resident limit requires an upgrade to the next tier."
+               data-es="El Licenciatario debe seleccionar el nivel apropiado basado en su capacidad total de residentes. Exceder el límite de residentes requiere una actualización al siguiente nivel."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="3. Permitted Use" data-es="3. Uso Permitido"></h2>
+            <p data-en="The license permits:"
+               data-es="La licencia permite:"></p>
+            <ul>
+                <li data-en="Unlimited cognitive training sessions for residents within the facility" 
+                    data-es="Sesiones ilimitadas de entrenamiento cognitivo para residentes dentro del centro"></li>
+                <li data-en="Staff accounts for activity coordinators to monitor and assist residents" 
+                    data-es="Cuentas de personal para coordinadores de actividades para monitorear y asistir residentes"></li>
+                <li data-en="Access to all 6 training programs in English and Spanish" 
+                    data-es="Acceso a los 6 programas de entrenamiento en inglés y español"></li>
+                <li data-en="Export and use of progress reports for regulatory compliance and family communication" 
+                    data-es="Exportación y uso de reportes de progreso para cumplimiento regulatorio y comunicación familiar"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="4. Restrictions" data-es="4. Restricciones"></h2>
+            <p data-en="Licensee shall NOT:"
+               data-es="El Licenciatario NO deberá:"></p>
+            <ul>
+                <li data-en="Share access credentials with individuals outside the facility" 
+                    data-es="Compartir credenciales de acceso con individuos fuera del centro"></li>
+                <li data-en="Use the software for non-residents or external clients" 
+                    data-es="Usar el software para no residentes o clientes externos"></li>
+                <li data-en="Reverse engineer, decompile, or modify the software" 
+                    data-es="Hacer ingeniería inversa, descompilar o modificar el software"></li>
+                <li data-en="Resell or sublicense the software to third parties" 
+                    data-es="Revender o sublicenciar el software a terceros"></li>
+                <li data-en="Remove or alter any proprietary notices" 
+                    data-es="Remover o alterar cualquier aviso de propiedad"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="5. Data Ownership and Privacy" data-es="5. Propiedad de Datos y Privacidad"></h2>
+            <p data-en="<strong>Resident Data:</strong> All resident performance data, progress reports, and personal information remain the property of the Licensee. Akashic Works processes this data solely to provide the licensed services."
+               data-es="<strong>Datos de Residentes:</strong> Todos los datos de rendimiento de residentes, reportes de progreso e información personal permanecen como propiedad del Licenciatario. Akashic Works procesa estos datos únicamente para proporcionar los servicios licenciados."></p>
+            <p data-en="<strong>HIPAA Compliance:</strong> Akashic Works maintains reasonable security measures to protect resident data in accordance with HIPAA requirements. Licensee is responsible for ensuring proper user access controls within their facility."
+               data-es="<strong>Cumplimiento HIPAA:</strong> Akashic Works mantiene medidas de seguridad razonables para proteger datos de residentes de acuerdo con requisitos HIPAA. El Licenciatario es responsable de asegurar controles de acceso de usuario apropiados dentro de su centro."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="6. Payment Terms" data-es="6. Términos de Pago"></h2>
+            <ul>
+                <li data-en="Facility Plans are billed annually in advance" 
+                    data-es="Los Planes para Centros se facturan anualmente por adelantado"></li>
+                <li data-en="Payment is due within 30 days of invoice date" 
+                    data-es="El pago vence dentro de 30 días de la fecha de factura"></li>
+                <li data-en="Late payments may result in service suspension" 
+                    data-es="Pagos tardíos pueden resultar en suspensión del servicio"></li>
+                <li data-en="Annual subscriptions auto-renew unless cancelled 30 days prior to renewal" 
+                    data-es="Las suscripciones anuales se renuevan automáticamente a menos que se cancelen 30 días antes de la renovación"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="7. Free Trial Period" data-es="7. Período de Prueba Gratuita"></h2>
+            <p data-en="New facilities may request a 30-day free trial period. During the trial:"
+               data-es="Los nuevos centros pueden solicitar un período de prueba gratuita de 30 días. Durante la prueba:"></p>
+            <ul>
+                <li data-en="Full access to all features for up to 25 residents" 
+                    data-es="Acceso completo a todas las características para hasta 25 residentes"></li>
+                <li data-en="No credit card required to start trial" 
+                    data-es="No se requiere tarjeta de crédito para iniciar la prueba"></li>
+                <li data-en="Either party may terminate without obligation" 
+                    data-es="Cualquiera de las partes puede terminar sin obligación"></li>
+                <li data-en="Trial data will be retained if Licensee subscribes" 
+                    data-es="Los datos de prueba se retendrán si el Licenciatario se suscribe"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="8. Refund Policy" data-es="8. Política de Reembolsos"></h2>
+            <p data-en="<strong>All facility sales are final.</strong> Due to the provision of a 30-day free trial and the comprehensive nature of facility plans, refunds are not offered once payment is made. Exceptions may be granted only in cases of:"
+               data-es="<strong>Todas las ventas para centros son finales.</strong> Debido a la provisión de una prueba gratuita de 30 días y la naturaleza integral de los planes para centros, no se ofrecen reembolsos una vez realizado el pago. Las excepciones pueden otorgarse solo en casos de:"></p>
+            <ul>
+                <li data-en="Duplicate billing errors" 
+                    data-es="Errores de facturación duplicados"></li>
+                <li data-en="Technical failures preventing service access for 7+ consecutive days" 
+                    data-es="Fallas técnicas que impidan el acceso al servicio por 7+ días consecutivos"></li>
+                <li data-en="Material breach of this Agreement by Licensor" 
+                    data-es="Incumplimiento material de este Acuerdo por el Licenciante"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="9. Support and Maintenance" data-es="9. Soporte y Mantenimiento"></h2>
+            <p data-en="Akashic Works provides:"
+               data-es="Akashic Works proporciona:"></p>
+            <ul>
+                <li data-en="Email support for all facility plans (response within 2 business days)" 
+                    data-es="Soporte por email para todos los planes de centro (respuesta dentro de 2 días hábiles)"></li>
+                <li data-en="Priority support for Standard and Premium plans (response within 1 business day)" 
+                    data-es="Soporte prioritario para planes Estándar y Premium (respuesta dentro de 1 día hábil)"></li>
+                <li data-en="Phone support for Premium and Enterprise plans" 
+                    data-es="Soporte telefónico para planes Premium y Empresarial"></li>
+                <li data-en="On-site training for Premium plans (Puerto Rico only, up to 2 sessions/year)" 
+                    data-es="Capacitación en sitio para planes Premium (solo Puerto Rico, hasta 2 sesiones/año)"></li>
+                <li data-en="Regular software updates and security patches at no additional cost" 
+                    data-es="Actualizaciones regulares de software y parches de seguridad sin costo adicional"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="10. Service Level and Availability" data-es="10. Nivel de Servicio y Disponibilidad"></h2>
+            <p data-en="Akashic Works strives to maintain 99% uptime. Scheduled maintenance will be announced 48 hours in advance when possible. Licensor is not liable for downtime caused by:"
+               data-es="Akashic Works se esfuerza por mantener 99% de tiempo de actividad. El mantenimiento programado se anunciará con 48 horas de anticipación cuando sea posible. El Licenciante no es responsable por tiempo de inactividad causado por:"></p>
+            <ul>
+                <li data-en="Internet service provider issues" 
+                    data-es="Problemas del proveedor de servicios de internet"></li>
+                <li data-en="Force majeure events (natural disasters, power outages, etc.)" 
+                    data-es="Eventos de fuerza mayor (desastres naturales, cortes de energía, etc.)"></li>
+                <li data-en="Facility's own equipment or network failures" 
+                    data-es="Fallas de equipo o red del propio centro"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="11. Termination" data-es="11. Terminación"></h2>
+            <p data-en="<strong>By Licensee:</strong> May cancel subscription with 30 days written notice. No prorated refunds for early termination."
+               data-es="<strong>Por el Licenciatario:</strong> Puede cancelar la suscripción con aviso por escrito de 30 días. No hay reembolsos prorrateados por terminación anticipada."></p>
+            <p data-en="<strong>By Licensor:</strong> May terminate immediately for material breach, including:"
+               data-es="<strong>Por el Licenciante:</strong> Puede terminar inmediatamente por incumplimiento material, incluyendo:"></p>
+            <ul>
+                <li data-en="Non-payment after 45 days" 
+                    data-es="Falta de pago después de 45 días"></li>
+                <li data-en="Unauthorized use or sharing of credentials" 
+                    data-es="Uso no autorizado o compartir credenciales"></li>
+                <li data-en="Violation of usage restrictions" 
+                    data-es="Violación de restricciones de uso"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="12. Liability Limitations" data-es="12. Limitaciones de Responsabilidad"></h2>
+            <p data-en="TO THE MAXIMUM EXTENT PERMITTED BY LAW:"
+               data-es="EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY:"></p>
+            <ul>
+                <li data-en="Akashic Works' total liability shall not exceed the annual subscription fee paid by Licensee" 
+                    data-es="La responsabilidad total de Akashic Works no excederá la tarifa de suscripción anual pagada por el Licenciatario"></li>
+                <li data-en="Licensor is not liable for indirect, incidental, or consequential damages" 
+                    data-es="El Licenciante no es responsable por daños indirectos, incidentales o consecuentes"></li>
+                <li data-en="The software is provided 'as is' without warranties of specific health outcomes" 
+                    data-es="El software se proporciona 'tal cual' sin garantías de resultados de salud específicos"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="13. Indemnification" data-es="13. Indemnización"></h2>
+            <p data-en="Licensee agrees to indemnify Akashic Works against claims arising from:"
+               data-es="El Licenciatario acepta indemnizar a Akashic Works contra reclamos que surjan de:"></p>
+            <ul>
+                <li data-en="Misuse of the software by facility staff or residents" 
+                    data-es="Mal uso del software por personal del centro o residentes"></li>
+                <li data-en="Violation of this Agreement" 
+                    data-es="Violación de este Acuerdo"></li>
+                <li data-en="Unauthorized sharing of access credentials" 
+                    data-es="Compartir credenciales de acceso no autorizadas"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="14. Modifications" data-es="14. Modificaciones"></h2>
+            <p data-en="Akashic Works may modify this Agreement or pricing with 60 days written notice to Licensee. Continued use after the notice period constitutes acceptance of changes. Price increases for existing subscriptions will not exceed 10% annually."
+               data-es="Akashic Works puede modificar este Acuerdo o precios con aviso por escrito de 60 días al Licenciatario. El uso continuado después del período de aviso constituye aceptación de cambios. Los aumentos de precio para suscripciones existentes no excederán el 10% anualmente."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="15. Governing Law" data-es="15. Ley Aplicable"></h2>
+            <p data-en="This Agreement is governed by the laws of Puerto Rico and the United States. Any disputes shall be resolved in the courts of Puerto Rico."
+               data-es="Este Acuerdo se rige por las leyes de Puerto Rico y los Estados Unidos. Cualquier disputa se resolverá en los tribunales de Puerto Rico."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="16. Entire Agreement" data-es="16. Acuerdo Completo"></h2>
+            <p data-en="This Agreement, along with the Terms of Service and Privacy Policy, constitutes the entire agreement between the parties. No verbal agreements or representations are binding."
+               data-es="Este Acuerdo, junto con los Términos de Servicio y Política de Privacidad, constituye el acuerdo completo entre las partes. Ningún acuerdo o representación verbal es vinculante."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="17. Contact Information" data-es="17. Información de Contacto"></h2>
+            <p data-en="For questions about this Facility License Agreement:"
+               data-es="Para preguntas sobre este Acuerdo de Licencia para Centros:"></p>
+            <p><strong>Email:</strong> <a href="mailto:support@akashic.works">support@akashic.works</a></p>
+            <p><strong>Akashic Works</strong><br>
+            <span data-en="San Juan, Puerto Rico" data-es="San Juan, Puerto Rico"></span></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+            <p data-en="By purchasing a Facility Plan, you agree to this License Agreement." 
+               data-es="Al comprar un Plan para Centros, aceptas este Acuerdo de Licencia."></p>
+            <a href="healthcare-facilities.html" class="back-link" data-en="← Back to Facility Plans" data-es="← Volver a Planes para Centros" style="margin-top: 20px; display: inline-block;"></a>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = localStorage.getItem('akashic_lang') || 'en';
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('akashic_lang', lang);
+            document.getElementById('langEN').classList.toggle('active', lang === 'en');
+            document.getElementById('langES').classList.toggle('active', lang === 'es');
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text) el.innerHTML = text;
+            });
+            document.documentElement.lang = lang === 'es' ? 'es' : 'en';
+        }
+        setLanguage(currentLang);
+    </script>
+</body>
+</html>
