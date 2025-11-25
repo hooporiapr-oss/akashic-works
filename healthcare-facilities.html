@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cognitive Training for Senior Healthcare Facilities | Akashic Works</title>
-    <meta name="description" content="Affordable cognitive training programs for assisted living and memory care facilities. HIPAA compliant, bilingual support, unlimited resident access.">
+    <title>Healthcare Facilities - Akashic Works</title>
+    <meta name="description" content="Affordable cognitive training for assisted living and memory care facilities. Save $88,000+ per year. HIPAA compliant, bilingual, unlimited access.">
     <style>
         * {
             margin: 0;
@@ -22,23 +22,23 @@
         /* Language Toggle */
         .lang-toggle {
             position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
+            top: 15px;
+            right: 15px;
+            z-index: 2000;
             display: flex;
             gap: 5px;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.8);
             padding: 5px;
             border-radius: 25px;
             border: 2px solid rgba(212, 175, 55, 0.5);
         }
 
         .lang-btn {
-            padding: 10px 15px;
+            padding: 8px 12px;
             border: none;
             border-radius: 20px;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 0.85em;
             font-family: 'Georgia', serif;
             transition: all 0.3s ease;
             background: transparent;
@@ -54,103 +54,92 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 80px 15px 40px;
         }
 
         .back-link {
             display: inline-block;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #ffd700;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1em;
             transition: all 0.3s ease;
         }
 
         .back-link:hover {
             color: #ff8c00;
-            transform: translateX(-5px);
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 30px 15px;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(20px);
             border: 3px solid rgba(212, 175, 55, 0.5);
             border-radius: 20px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         .hero-icon {
-            font-size: 5em;
-            margin-bottom: 20px;
+            font-size: 3.5em;
+            margin-bottom: 15px;
         }
 
         .hero h1 {
-            font-size: 3em;
+            font-size: 2em;
             color: #ffd700;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             line-height: 1.2;
         }
 
         .hero-subtitle {
-            font-size: 1.5em;
+            font-size: 1.1em;
             color: #d4af37;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            line-height: 1.5;
         }
 
         .hero-cta {
-            display: inline-flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        .btn {
+            display: block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.05em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-family: 'Georgia', serif;
+            text-align: center;
         }
 
         .btn-primary {
-            display: inline-block;
             background: linear-gradient(135deg, #ffd700, #ff8c00);
             color: #1a1034;
-            padding: 18px 40px;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 1.2em;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-family: 'Georgia', serif;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
         }
 
         .btn-secondary {
-            display: inline-block;
             background: rgba(255, 255, 255, 0.1);
             color: #ffd700;
-            padding: 18px 40px;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 1.2em;
-            text-decoration: none;
-            transition: all 0.3s ease;
             border: 2px solid #ffd700;
         }
 
-        .btn-secondary:hover {
-            background: rgba(255, 215, 0, 0.2);
-            transform: translateY(-3px);
+        /* Value Props */
+        .value-section {
+            margin-bottom: 40px;
         }
 
-        /* Value Props */
-        .value-props {
+        .value-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
         }
 
         .value-card {
@@ -158,30 +147,25 @@
             backdrop-filter: blur(20px);
             border: 2px solid rgba(212, 175, 55, 0.3);
             border-radius: 15px;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .value-card:hover {
-            border-color: #ffd700;
-            transform: translateY(-5px);
         }
 
         .value-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
+            font-size: 2.5em;
+            margin-bottom: 12px;
         }
 
         .value-card h3 {
             color: #ffd700;
-            font-size: 1.5em;
-            margin-bottom: 15px;
+            font-size: 1.3em;
+            margin-bottom: 10px;
         }
 
         .value-card p {
             color: #c4c4d8;
             line-height: 1.6;
+            font-size: 0.95em;
         }
 
         /* Cost Comparison */
@@ -190,29 +174,23 @@
             backdrop-filter: blur(20px);
             border: 3px solid rgba(212, 175, 55, 0.5);
             border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 60px;
+            padding: 25px 15px;
+            margin-bottom: 40px;
         }
 
         .comparison-section h2 {
             text-align: center;
             color: #ffd700;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+            font-size: 1.8em;
+            margin-bottom: 25px;
         }
 
         .comparison-card {
             background: rgba(0, 0, 0, 0.3);
             border: 2px solid rgba(212, 175, 55, 0.3);
             border-radius: 15px;
-            padding: 30px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
         .comparison-card.traditional {
@@ -225,8 +203,8 @@
         }
 
         .comparison-card h3 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
+            font-size: 1.5em;
+            margin-bottom: 15px;
             text-align: center;
         }
 
@@ -239,10 +217,10 @@
         }
 
         .price-big {
-            font-size: 3em;
+            font-size: 2.5em;
             font-weight: bold;
             text-align: center;
-            margin: 20px 0;
+            margin: 15px 0;
         }
 
         .comparison-card.traditional .price-big {
@@ -253,32 +231,47 @@
             color: #51cf66;
         }
 
+        .price-note {
+            text-align: center;
+            color: #b8b8cc;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .comparison-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .comparison-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
         .savings-banner {
             background: linear-gradient(135deg, #51cf66, #2ecc71);
             color: #fff;
-            padding: 25px;
+            padding: 20px;
             border-radius: 15px;
             text-align: center;
-            font-size: 1.8em;
+            font-size: 1.3em;
             font-weight: bold;
+            margin-top: 20px;
+            line-height: 1.4;
         }
 
-        /* Pricing Tiers */
+        /* Pricing Section */
         .pricing-section {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5em;
+            font-size: 2em;
             color: #ffd700;
-            margin-bottom: 40px;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            margin-bottom: 30px;
         }
 
         .pricing-card {
@@ -286,70 +279,69 @@
             backdrop-filter: blur(20px);
             border: 3px solid rgba(212, 175, 55, 0.5);
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 25px 20px;
             text-align: center;
-            position: relative;
+            margin-bottom: 20px;
         }
 
         .pricing-card.featured {
             border-color: #ffd700;
             box-shadow: 0 10px 40px rgba(255, 215, 0, 0.3);
-            transform: scale(1.05);
         }
 
         .badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
+            display: inline-block;
             background: linear-gradient(135deg, #ffd700, #ff8c00);
             color: #1a1034;
-            padding: 8px 25px;
+            padding: 6px 20px;
             border-radius: 20px;
             font-weight: bold;
-            font-size: 0.9em;
+            font-size: 0.85em;
+            margin-bottom: 15px;
         }
 
         .pricing-card h3 {
             color: #ffd700;
-            font-size: 1.8em;
-            margin-bottom: 10px;
+            font-size: 1.6em;
+            margin-bottom: 8px;
         }
 
         .pricing-card .residents {
             color: #b8b8cc;
-            font-size: 1em;
-            margin-bottom: 20px;
+            font-size: 0.95em;
+            margin-bottom: 15px;
         }
 
         .pricing-card .price {
-            font-size: 3.5em;
+            font-size: 3em;
             color: #ffd700;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .pricing-card .price span {
-            font-size: 0.3em;
+            font-size: 0.35em;
             color: #b8b8cc;
         }
 
         .pricing-card .per-resident {
             color: #51cf66;
-            font-size: 1.1em;
-            margin-bottom: 25px;
+            font-size: 1em;
+            margin-bottom: 20px;
         }
 
         .pricing-card ul {
             list-style: none;
             text-align: left;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .pricing-card li {
-            padding: 10px 0;
+            padding: 8px 0;
             color: #c4c4d8;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9em;
+            line-height: 1.5;
         }
 
         /* Features Section */
@@ -358,78 +350,195 @@
             backdrop-filter: blur(20px);
             border: 3px solid rgba(212, 175, 55, 0.5);
             border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 60px;
+            padding: 25px 15px;
+            margin-bottom: 40px;
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+        .features-list {
+            list-style: none;
+            padding: 0;
         }
 
         .feature-item {
             display: flex;
             align-items: flex-start;
-            gap: 15px;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .feature-icon {
-            font-size: 2em;
+            font-size: 1.8em;
             flex-shrink: 0;
         }
 
         .feature-text h4 {
             color: #ffd700;
-            font-size: 1.2em;
-            margin-bottom: 8px;
+            font-size: 1.1em;
+            margin-bottom: 6px;
         }
 
         .feature-text p {
             color: #c4c4d8;
             line-height: 1.6;
+            font-size: 0.9em;
         }
 
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, #ffd700, #ff8c00);
             color: #1a1034;
-            padding: 60px 40px;
+            padding: 30px 20px;
             border-radius: 20px;
             text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .cta-section p {
-            font-size: 1.3em;
             margin-bottom: 30px;
         }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
+        .cta-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .cta-section p {
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .cta-section .btn-secondary {
+            background: rgba(26, 16, 52, 0.3);
+            border-color: #1a1034;
+        }
+
+        .cta-contact {
+            margin-top: 20px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Tablet Styles */
+        @media (min-width: 600px) {
+            .container {
+                padding: 90px 25px 50px;
             }
+
+            .hero {
+                padding: 40px 25px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
             .hero-subtitle {
                 font-size: 1.2em;
             }
-            .comparison-grid {
-                grid-template-columns: 1fr;
+
+            .hero-cta {
+                flex-direction: row;
+                justify-content: center;
             }
-            .pricing-card.featured {
-                transform: scale(1);
+
+            .btn {
+                flex: 0 1 auto;
+                min-width: 200px;
             }
-            .btn-primary, .btn-secondary {
-                padding: 15px 30px;
-                font-size: 1em;
+
+            .value-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
+
+            .comparison-section {
+                padding: 35px 25px;
+            }
+
+            .features-section {
+                padding: 35px 25px;
+            }
+
+            .cta-section {
+                padding: 40px 30px;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 900px) {
             .lang-toggle {
-                top: 10px;
-                right: 10px;
+                top: 20px;
+                right: 20px;
+            }
+
+            .lang-btn {
+                padding: 10px 15px;
+                font-size: 0.95em;
+            }
+
+            .container {
+                padding: 100px 40px 60px;
+            }
+
+            .hero {
+                padding: 50px 40px;
+            }
+
+            .hero h1 {
+                font-size: 3em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.4em;
+            }
+
+            .hero-icon {
+                font-size: 5em;
+            }
+
+            .value-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+
+            .comparison-section {
+                padding: 50px 40px;
+            }
+
+            .section-title {
+                font-size: 2.5em;
+            }
+
+            .features-section {
+                padding: 50px 40px;
+            }
+
+            .features-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .feature-item {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+
+            .cta-section {
+                padding: 50px 40px;
+            }
+
+            .cta-section h2 {
+                font-size: 2.5em;
+            }
+
+            .cta-section p {
+                font-size: 1.3em;
             }
         }
     </style>
@@ -437,8 +546,8 @@
 <body>
     <!-- Language Toggle -->
     <div class="lang-toggle">
-        <button class="lang-btn active" id="langEN" onclick="setLanguage('en')">🇺🇸 English</button>
-        <button class="lang-btn" id="langES" onclick="setLanguage('es')">🇵🇷 Español</button>
+        <button class="lang-btn active" id="langEN" onclick="setLanguage('en')">🇺🇸 EN</button>
+        <button class="lang-btn" id="langES" onclick="setLanguage('es')">🇵🇷 ES</button>
     </div>
 
     <div class="container">
@@ -447,59 +556,61 @@
         <!-- Hero Section -->
         <div class="hero">
             <div class="hero-icon">🏥</div>
-            <h1 data-en="Cognitive Training for Senior Healthcare Facilities"
-                data-es="Entrenamiento Cognitivo para Centros de Salud para Mayores"></h1>
+            <h1 data-en="Cognitive Training for Healthcare Facilities"
+                data-es="Entrenamiento Cognitivo para Centros de Salud"></h1>
             <p class="hero-subtitle" 
-               data-en="Affordable, Evidence-Based Mental Stimulation for Your Residents"
-               data-es="Estimulación Mental Asequible y Basada en Evidencia para Sus Residentes"></p>
+               data-en="Affordable mental stimulation for assisted living, memory care, and nursing facilities"
+               data-es="Estimulación mental asequible para residencias asistidas, centros de memoria y enfermería"></p>
             <div class="hero-cta">
-                <a href="#demo" class="btn-primary" data-en="📅 Schedule Free Demo" data-es="📅 Agendar Demo Gratis"></a>
-                <a href="#pricing" class="btn-secondary" data-en="💰 View Pricing" data-es="💰 Ver Precios"></a>
+                <a href="#demo" class="btn btn-primary" data-en="📅 Free Demo" data-es="📅 Demo Gratis"></a>
+                <a href="#pricing" class="btn btn-secondary" data-en="💰 See Pricing" data-es="💰 Ver Precios"></a>
             </div>
         </div>
 
         <!-- Value Props -->
-        <div class="value-props">
-            <div class="value-card">
-                <div class="value-icon">💰</div>
-                <h3 data-en="99% Cost Reduction" data-es="99% Reducción de Costos"></h3>
-                <p data-en="Save thousands compared to traditional cognitive therapy programs while providing unlimited access to all residents."
-                   data-es="Ahorre miles comparado con programas tradicionales de terapia cognitiva mientras proporciona acceso ilimitado a todos los residentes."></p>
-            </div>
+        <div class="value-section">
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">💰</div>
+                    <h3 data-en="99% Cost Reduction" data-es="99% Reducción de Costos"></h3>
+                    <p data-en="Save thousands vs. traditional cognitive therapy"
+                       data-es="Ahorre miles vs. terapia cognitiva tradicional"></p>
+                </div>
 
-            <div class="value-card">
-                <div class="value-icon">🌎</div>
-                <h3 data-en="English + Spanish" data-es="Inglés + Español"></h3>
-                <p data-en="Fully bilingual platform designed for Puerto Rico's diverse senior population. Toggle languages with one click."
-                   data-es="Plataforma completamente bilingüe diseñada para la diversa población mayor de Puerto Rico. Cambia idiomas con un clic."></p>
-            </div>
+                <div class="value-card">
+                    <div class="value-icon">🌎</div>
+                    <h3 data-en="English + Spanish" data-es="Inglés + Español"></h3>
+                    <p data-en="Fully bilingual platform for diverse residents"
+                       data-es="Plataforma completamente bilingüe para residentes diversos"></p>
+                </div>
 
-            <div class="value-card">
-                <div class="value-icon">📊</div>
-                <h3 data-en="Progress Tracking" data-es="Seguimiento de Progreso"></h3>
-                <p data-en="Individual progress reports for each resident. Document cognitive activity for Medicare, families, and regulatory compliance."
-                   data-es="Informes de progreso individuales para cada residente. Documente actividad cognitiva para Medicare, familias y cumplimiento regulatorio."></p>
-            </div>
+                <div class="value-card">
+                    <div class="value-icon">📊</div>
+                    <h3 data-en="Progress Tracking" data-es="Seguimiento de Progreso"></h3>
+                    <p data-en="Document activity for Medicare & families"
+                       data-es="Documente actividad para Medicare y familias"></p>
+                </div>
 
-            <div class="value-card">
-                <div class="value-icon">🎯</div>
-                <h3 data-en="6 Training Programs" data-es="6 Programas de Entrenamiento"></h3>
-                <p data-en="Number Memory, Sequence Memory, Memory Match, Reaction Time, Reflex Training, and Word Search (bilingual)."
-                   data-es="Memoria de Números, Memoria de Secuencia, Parejas de Memoria, Tiempo de Reacción, Entrenamiento de Reflejos y Sopa de Letras (bilingüe)."></p>
-            </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3 data-en="6 Programs" data-es="6 Programas"></h3>
+                    <p data-en="Memory, reaction time, pattern recognition, vocabulary"
+                       data-es="Memoria, tiempo de reacción, reconocimiento de patrones, vocabulario"></p>
+                </div>
 
-            <div class="value-card">
-                <div class="value-icon">🔒</div>
-                <h3 data-en="HIPAA Compliant" data-es="Cumple con HIPAA"></h3>
-                <p data-en="Secure data handling with encrypted storage. Your residents' privacy and data are protected at all times."
-                   data-es="Manejo seguro de datos con almacenamiento encriptado. La privacidad y datos de sus residentes están protegidos en todo momento."></p>
-            </div>
+                <div class="value-card">
+                    <div class="value-icon">🔒</div>
+                    <h3 data-en="HIPAA Compliant" data-es="Cumple con HIPAA"></h3>
+                    <p data-en="Secure, encrypted data handling"
+                       data-es="Manejo de datos seguro y encriptado"></p>
+                </div>
 
-            <div class="value-card">
-                <div class="value-icon">👥</div>
-                <h3 data-en="Staff Dashboard" data-es="Panel para Personal"></h3>
-                <p data-en="Activity coordinators can monitor all resident activity, export reports, and assist residents with training sessions."
-                   data-es="Los coordinadores de actividades pueden monitorear toda la actividad de residentes, exportar reportes y asistir en las sesiones."></p>
+                <div class="value-card">
+                    <div class="value-icon">👥</div>
+                    <h3 data-en="Unlimited Access" data-es="Acceso Ilimitado"></h3>
+                    <p data-en="All residents train 24/7, minimal supervision"
+                       data-es="Todos los residentes entrenan 24/7, supervisión mínima"></p>
+                </div>
             </div>
         </div>
 
@@ -507,36 +618,34 @@
         <div class="comparison-section">
             <h2 data-en="💡 Cost Comparison" data-es="💡 Comparación de Costos"></h2>
             
-            <div class="comparison-grid">
-                <div class="comparison-card traditional">
-                    <h3 data-en="Traditional Approach" data-es="Enfoque Tradicional"></h3>
-                    <p style="color: #c4c4d8; margin-bottom: 20px;" 
-                       data-en="Cognitive therapy sessions with external providers"
-                       data-es="Sesiones de terapia cognitiva con proveedores externos"></p>
-                    <div class="price-big" data-en="$90K-180K" data-es="$90K-180K"></div>
-                    <p style="color: #c4c4d8; text-align: center;" data-en="per year" data-es="por año"></p>
-                    <ul style="margin-top: 20px;">
-                        <li data-en="$75-150 per hour per resident" data-es="$75-150 por hora por residente"></li>
-                        <li data-en="Limited session availability" data-es="Disponibilidad limitada de sesiones"></li>
-                        <li data-en="Requires trained staff supervision" data-es="Requiere supervisión de personal capacitado"></li>
-                        <li data-en="Scheduling complexity" data-es="Complejidad de programación"></li>
-                    </ul>
-                </div>
+            <div class="comparison-card traditional">
+                <h3 data-en="Traditional Approach" data-es="Enfoque Tradicional"></h3>
+                <p class="price-note" 
+                   data-en="Cognitive therapy sessions"
+                   data-es="Sesiones de terapia cognitiva"></p>
+                <div class="price-big" data-en="$90K-180K" data-es="$90K-180K"></div>
+                <p class="price-note" data-en="per year" data-es="por año"></p>
+                <ul class="comparison-list">
+                    <li data-en="$75-150 per hour per resident" data-es="$75-150 por hora por residente"></li>
+                    <li data-en="Limited availability" data-es="Disponibilidad limitada"></li>
+                    <li data-en="Requires staff supervision" data-es="Requiere supervisión de personal"></li>
+                    <li data-en="Scheduling complexity" data-es="Complejidad de programación"></li>
+                </ul>
+            </div>
 
-                <div class="comparison-card akashic">
-                    <h3 data-en="Akashic Works" data-es="Akashic Works"></h3>
-                    <p style="color: #c4c4d8; margin-bottom: 20px;" 
-                       data-en="Digital cognitive training platform"
-                       data-es="Plataforma digital de entrenamiento cognitivo"></p>
-                    <div class="price-big" data-en="$999-1,999" data-es="$999-1,999"></div>
-                    <p style="color: #c4c4d8; text-align: center;" data-en="per year" data-es="por año"></p>
-                    <ul style="margin-top: 20px;">
-                        <li data-en="✅ Unlimited sessions for all residents" data-es="✅ Sesiones ilimitadas para todos los residentes"></li>
-                        <li data-en="✅ Available 24/7" data-es="✅ Disponible 24/7"></li>
-                        <li data-en="✅ Minimal staff supervision needed" data-es="✅ Supervisión mínima de personal necesaria"></li>
-                        <li data-en="✅ Self-directed activities" data-es="✅ Actividades autodirigidas"></li>
-                    </ul>
-                </div>
+            <div class="comparison-card akashic">
+                <h3 data-en="Akashic Works" data-es="Akashic Works"></h3>
+                <p class="price-note" 
+                   data-en="Digital cognitive training"
+                   data-es="Entrenamiento cognitivo digital"></p>
+                <div class="price-big" data-en="$999-1,999" data-es="$999-1,999"></div>
+                <p class="price-note" data-en="per year" data-es="por año"></p>
+                <ul class="comparison-list">
+                    <li data-en="✅ Unlimited sessions for all residents" data-es="✅ Sesiones ilimitadas para todos"></li>
+                    <li data-en="✅ Available 24/7" data-es="✅ Disponible 24/7"></li>
+                    <li data-en="✅ Minimal supervision needed" data-es="✅ Supervisión mínima necesaria"></li>
+                    <li data-en="✅ Self-directed activities" data-es="✅ Actividades autodirigidas"></li>
+                </ul>
             </div>
 
             <div class="savings-banner" data-en="💰 Save $88,000 - $178,000 Per Year" data-es="💰 Ahorre $88,000 - $178,000 Por Año"></div>
@@ -544,194 +653,194 @@
 
         <!-- Pricing Section -->
         <div class="pricing-section" id="pricing">
-            <h2 class="section-title" data-en="Facility Pricing Plans" data-es="Planes de Precios para Centros"></h2>
+            <h2 class="section-title" data-en="Facility Pricing" data-es="Precios para Centros"></h2>
             
-            <div class="pricing-grid">
-                <!-- Starter -->
-                <div class="pricing-card">
-                    <h3 data-en="Facility Starter" data-es="Centro Básico"></h3>
-                    <p class="residents" data-en="Up to 25 residents" data-es="Hasta 25 residentes"></p>
-                    <div class="price">$499<span data-en="/year" data-es="/año"></span></div>
-                    <p class="per-resident" data-en="Just $19.96 per resident/year" data-es="Solo $19.96 por residente/año"></p>
-                    <ul>
-                        <li data-en="✅ All 6 training programs" data-es="✅ Los 6 programas de entrenamiento"></li>
-                        <li data-en="✅ Unlimited sessions" data-es="✅ Sesiones ilimitadas"></li>
-                        <li data-en="✅ English + Spanish" data-es="✅ Inglés + Español"></li>
-                        <li data-en="✅ Progress tracking" data-es="✅ Seguimiento de progreso"></li>
-                        <li data-en="✅ Monthly reports" data-es="✅ Reportes mensuales"></li>
-                        <li data-en="✅ Email support" data-es="✅ Soporte por email"></li>
-                    </ul>
-                    <a href="#demo" class="btn-primary" data-en="Get Started" data-es="Comenzar"></a>
-                </div>
-
-                <!-- Standard (Featured) -->
-                <div class="pricing-card featured">
-                    <div class="badge" data-en="⭐ MOST POPULAR" data-es="⭐ MÁS POPULAR"></div>
-                    <h3 data-en="Facility Standard" data-es="Centro Estándar"></h3>
-                    <p class="residents" data-en="Up to 75 residents" data-es="Hasta 75 residentes"></p>
-                    <div class="price">$999<span data-en="/year" data-es="/año"></span></div>
-                    <p class="per-resident" data-en="Just $13.32 per resident/year" data-es="Solo $13.32 por residente/año"></p>
-                    <ul>
-                        <li data-en="✅ Everything in Starter" data-es="✅ Todo en Básico"></li>
-                        <li data-en="✅ Admin dashboard" data-es="✅ Panel de administración"></li>
-                        <li data-en="✅ Bulk user creation" data-es="✅ Creación masiva de usuarios"></li>
-                        <li data-en="✅ Staff accounts (3)" data-es="✅ Cuentas de personal (3)"></li>
-                        <li data-en="✅ Priority support" data-es="✅ Soporte prioritario"></li>
-                        <li data-en="✅ Quarterly analytics" data-es="✅ Análisis trimestrales"></li>
-                    </ul>
-                    <a href="#demo" class="btn-primary" data-en="Get Started" data-es="Comenzar"></a>
-                </div>
-
-                <!-- Premium -->
-                <div class="pricing-card">
-                    <h3 data-en="Facility Premium" data-es="Centro Premium"></h3>
-                    <p class="residents" data-en="Up to 200 residents" data-es="Hasta 200 residentes"></p>
-                    <div class="price">$1,999<span data-en="/year" data-es="/año"></span></div>
-                    <p class="per-resident" data-en="Just $9.99 per resident/year" data-es="Solo $9.99 por residente/año"></p>
-                    <ul>
-                        <li data-en="✅ Everything in Standard" data-es="✅ Todo en Estándar"></li>
-                        <li data-en="✅ Unlimited staff accounts" data-es="✅ Cuentas de personal ilimitadas"></li>
-                        <li data-en="✅ Dedicated account manager" data-es="✅ Gerente de cuenta dedicado"></li>
-                        <li data-en="✅ On-site training (PR only)" data-es="✅ Capacitación en sitio (solo PR)"></li>
-                        <li data-en="✅ Custom reports" data-es="✅ Reportes personalizados"></li>
-                        <li data-en="✅ Phone support" data-es="✅ Soporte telefónico"></li>
-                    </ul>
-                    <a href="#demo" class="btn-primary" data-en="Get Started" data-es="Comenzar"></a>
-                </div>
+            <!-- Starter -->
+            <div class="pricing-card">
+                <h3 data-en="Facility Starter" data-es="Centro Básico"></h3>
+                <p class="residents" data-en="Up to 25 residents" data-es="Hasta 25 residentes"></p>
+                <div class="price">$499<span data-en="/year" data-es="/año"></span></div>
+                <p class="per-resident" data-en="$19.96 per resident/year" data-es="$19.96 por residente/año"></p>
+                <ul>
+                    <li data-en="✅ All 6 training programs" data-es="✅ Los 6 programas"></li>
+                    <li data-en="✅ Unlimited sessions" data-es="✅ Sesiones ilimitadas"></li>
+                    <li data-en="✅ English + Spanish" data-es="✅ Inglés + Español"></li>
+                    <li data-en="✅ Progress tracking" data-es="✅ Seguimiento de progreso"></li>
+                    <li data-en="✅ Monthly reports" data-es="✅ Reportes mensuales"></li>
+                    <li data-en="✅ Email support" data-es="✅ Soporte por email"></li>
+                </ul>
+                <a href="#demo" class="btn btn-primary" data-en="Get Started" data-es="Comenzar"></a>
             </div>
 
-            <p style="text-align: center; color: #ffd700; font-size: 1.3em; margin-top: 40px;">
-                <strong data-en="Enterprise (200+ residents):" data-es="Empresarial (200+ residentes):"></strong>
-                <span data-en="Contact us for custom pricing and multi-location packages" 
-                      data-es="Contáctenos para precios personalizados y paquetes multi-ubicación"></span>
+            <!-- Standard (Featured) -->
+            <div class="pricing-card featured">
+                <div class="badge" data-en="⭐ MOST POPULAR" data-es="⭐ MÁS POPULAR"></div>
+                <h3 data-en="Facility Standard" data-es="Centro Estándar"></h3>
+                <p class="residents" data-en="Up to 75 residents" data-es="Hasta 75 residentes"></p>
+                <div class="price">$999<span data-en="/year" data-es="/año"></span></div>
+                <p class="per-resident" data-en="$13.32 per resident/year" data-es="$13.32 por residente/año"></p>
+                <ul>
+                    <li data-en="✅ Everything in Starter" data-es="✅ Todo en Básico"></li>
+                    <li data-en="✅ Admin dashboard" data-es="✅ Panel de administración"></li>
+                    <li data-en="✅ Bulk user creation" data-es="✅ Creación masiva de usuarios"></li>
+                    <li data-en="✅ Staff accounts (3)" data-es="✅ Cuentas de personal (3)"></li>
+                    <li data-en="✅ Priority support" data-es="✅ Soporte prioritario"></li>
+                    <li data-en="✅ Quarterly analytics" data-es="✅ Análisis trimestrales"></li>
+                </ul>
+                <a href="#demo" class="btn btn-primary" data-en="Get Started" data-es="Comenzar"></a>
+            </div>
+
+            <!-- Premium -->
+            <div class="pricing-card">
+                <h3 data-en="Facility Premium" data-es="Centro Premium"></h3>
+                <p class="residents" data-en="Up to 200 residents" data-es="Hasta 200 residentes"></p>
+                <div class="price">$1,999<span data-en="/year" data-es="/año"></span></div>
+                <p class="per-resident" data-en="$9.99 per resident/year" data-es="$9.99 por residente/año"></p>
+                <ul>
+                    <li data-en="✅ Everything in Standard" data-es="✅ Todo en Estándar"></li>
+                    <li data-en="✅ Unlimited staff accounts" data-es="✅ Cuentas de personal ilimitadas"></li>
+                    <li data-en="✅ Account manager" data-es="✅ Gerente de cuenta"></li>
+                    <li data-en="✅ On-site training (PR)" data-es="✅ Capacitación en sitio (PR)"></li>
+                    <li data-en="✅ Custom reports" data-es="✅ Reportes personalizados"></li>
+                    <li data-en="✅ Phone support" data-es="✅ Soporte telefónico"></li>
+                </ul>
+                <a href="#demo" class="btn btn-primary" data-en="Get Started" data-es="Comenzar"></a>
+            </div>
+
+            <p style="text-align: center; color: #ffd700; font-size: 1.1em; margin-top: 30px; line-height: 1.5;">
+                <strong data-en="Enterprise (200+):" data-es="Empresarial (200+):"></strong><br>
+                <span data-en="Custom pricing for multi-location facilities" 
+                      data-es="Precios personalizados para centros multi-ubicación"></span>
             </p>
         </div>
 
         <!-- Features Section -->
         <div class="features-section">
-            <h2 class="section-title" data-en="What's Included in Every Plan" data-es="Qué Incluye Cada Plan"></h2>
+            <h2 class="section-title" data-en="What's Included" data-es="Qué Incluye"></h2>
             
-            <div class="features-grid">
-                <div class="feature-item">
+            <ul class="features-list">
+                <li class="feature-item">
                     <div class="feature-icon">🎮</div>
                     <div class="feature-text">
                         <h4 data-en="6 Cognitive Programs" data-es="6 Programas Cognitivos"></h4>
-                        <p data-en="Memory, reaction time, pattern recognition, and vocabulary training"
-                           data-es="Memoria, tiempo de reacción, reconocimiento de patrones y entrenamiento de vocabulario"></p>
+                        <p data-en="Memory, reaction time, pattern recognition, vocabulary"
+                           data-es="Memoria, tiempo de reacción, reconocimiento de patrones, vocabulario"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">🌐</div>
                     <div class="feature-text">
                         <h4 data-en="Bilingual Interface" data-es="Interfaz Bilingüe"></h4>
                         <p data-en="Full English and Spanish support with instant toggle"
                            data-es="Soporte completo en inglés y español con cambio instantáneo"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">📈</div>
                     <div class="feature-text">
                         <h4 data-en="Progress Analytics" data-es="Análisis de Progreso"></h4>
-                        <p data-en="Track improvement over time with detailed performance metrics"
-                           data-es="Rastree mejoras a lo largo del tiempo con métricas detalladas de rendimiento"></p>
+                        <p data-en="Track improvement with detailed performance metrics"
+                           data-es="Rastree mejoras con métricas detalladas de rendimiento"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">📄</div>
                     <div class="feature-text">
                         <h4 data-en="Activity Documentation" data-es="Documentación de Actividades"></h4>
-                        <p data-en="Export reports for Medicare, families, and regulatory compliance"
-                           data-es="Exporte reportes para Medicare, familias y cumplimiento regulatorio"></p>
+                        <p data-en="Export reports for Medicare and regulatory compliance"
+                           data-es="Exporte reportes para Medicare y cumplimiento regulatorio"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">🔐</div>
                     <div class="feature-text">
                         <h4 data-en="HIPAA Compliant" data-es="Cumple con HIPAA"></h4>
                         <p data-en="Secure, encrypted data storage and transmission"
                            data-es="Almacenamiento y transmisión de datos seguro y encriptado"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">💻</div>
                     <div class="feature-text">
-                        <h4 data-en="Works on Any Device" data-es="Funciona en Cualquier Dispositivo"></h4>
+                        <h4 data-en="Any Device" data-es="Cualquier Dispositivo"></h4>
                         <p data-en="Desktop, tablet, or smartphone - no special equipment needed"
                            data-es="Computadora, tableta o teléfono - no se necesita equipo especial"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">👨‍⚕️</div>
                     <div class="feature-text">
                         <h4 data-en="Staff Dashboard" data-es="Panel para Personal"></h4>
-                        <p data-en="Activity coordinators can monitor, assist, and generate reports"
-                           data-es="Coordinadores pueden monitorear, asistir y generar reportes"></p>
+                        <p data-en="Activity coordinators can monitor and generate reports"
+                           data-es="Coordinadores pueden monitorear y generar reportes"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">⏱️</div>
                     <div class="feature-text">
-                        <h4 data-en="Self-Paced Training" data-es="Entrenamiento Auto-Dirigido"></h4>
+                        <h4 data-en="Self-Paced" data-es="Auto-Dirigido"></h4>
                         <p data-en="Residents train at their own pace, reducing staff workload"
                            data-es="Residentes entrenan a su propio ritmo, reduciendo carga de personal"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">🎯</div>
                     <div class="feature-text">
-                        <h4 data-en="Difficulty Scaling" data-es="Dificultad Escalable"></h4>
-                        <p data-en="Programs adapt to each resident's skill level automatically"
-                           data-es="Programas se adaptan automáticamente al nivel de habilidad de cada residente"></p>
+                        <h4 data-en="Adaptive Difficulty" data-es="Dificultad Adaptable"></h4>
+                        <p data-en="Programs adapt to each resident's skill level"
+                           data-es="Programas se adaptan al nivel de habilidad de cada residente"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">📞</div>
                     <div class="feature-text">
                         <h4 data-en="Dedicated Support" data-es="Soporte Dedicado"></h4>
-                        <p data-en="Email and phone support to ensure smooth operation"
-                           data-es="Soporte por email y teléfono para asegurar operación fluida"></p>
+                        <p data-en="Email and phone support for smooth operation"
+                           data-es="Soporte por email y teléfono para operación fluida"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">🚫</div>
                     <div class="feature-text">
-                        <h4 data-en="Ad-Free Experience" data-es="Experiencia Sin Anuncios"></h4>
+                        <h4 data-en="Ad-Free" data-es="Sin Anuncios"></h4>
                         <p data-en="Clean, professional interface without distractions"
                            data-es="Interfaz limpia y profesional sin distracciones"></p>
                     </div>
-                </div>
+                </li>
 
-                <div class="feature-item">
+                <li class="feature-item">
                     <div class="feature-icon">🔄</div>
                     <div class="feature-text">
                         <h4 data-en="Regular Updates" data-es="Actualizaciones Regulares"></h4>
-                        <p data-en="New features and improvements at no additional cost"
-                           data-es="Nuevas características y mejoras sin costo adicional"></p>
+                        <p data-en="New features at no additional cost"
+                           data-es="Nuevas características sin costo adicional"></p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
 
         <!-- CTA Section -->
         <div class="cta-section" id="demo">
-            <h2 data-en="Ready to Transform Your Cognitive Care Program?" data-es="¿Listo para Transformar Su Programa de Cuidado Cognitivo?"></h2>
+            <h2 data-en="Ready to Transform Your Cognitive Care?" data-es="¿Listo para Transformar Su Cuidado Cognitivo?"></h2>
             <p data-en="Schedule a free 30-minute demo and see how Akashic Works can benefit your facility and residents."
                data-es="Agende una demo gratuita de 30 minutos y vea cómo Akashic Works puede beneficiar su centro y residentes."></p>
-            <a href="mailto:support@akashic.works?subject=Healthcare%20Facility%20Demo%20Request" class="btn-secondary" style="color: #1a1034; border-color: #1a1034;">
-                <span data-en="📧 Request Demo: support@akashic.works" data-es="📧 Solicitar Demo: support@akashic.works"></span>
+            <a href="mailto:support@akashic.works?subject=Healthcare%20Facility%20Demo%20Request" class="btn btn-secondary">
+                <span data-en="📧 Request Demo" data-es="📧 Solicitar Demo"></span>
             </a>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <span data-en="Or call us:" data-es="O llámenos:"></span> <strong data-en="(Contact info coming soon)" data-es="(Información de contacto próximamente)"></strong>
+            <p class="cta-contact">
+                <strong>Email:</strong> support@akashic.works<br>
+                <span data-en="🇵🇷 Based in Puerto Rico | Serving facilities across the island"
+                      data-es="🇵🇷 Con base en Puerto Rico | Sirviendo centros en toda la isla"></span>
             </p>
         </div>
     </div>
