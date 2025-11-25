@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Akashic Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1034 50%, #2d1b4e 100%);
+            min-height: 100vh;
+            color: #e8e8f0;
+            padding: 20px;
+        }
+
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 25px;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+        }
+
+        .lang-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Georgia', serif;
+            transition: all 0.3s ease;
+            background: transparent;
+            color: #b8b8cc;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            color: #1a1034;
+            font-weight: bold;
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 3px solid rgba(212, 175, 55, 0.5);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ff8c00;
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #b8b8cc;
+            font-style: italic;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #ffd700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #d4af37;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #c4c4d8;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            line-height: 1.8;
+            color: #c4c4d8;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #ffd700;
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff8c00;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin-top: 70px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .lang-toggle {
+                top: 10px;
+                right: 10px;
+            }
+            .lang-btn {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" id="langEN" onclick="setLanguage('en')">🇺🇸 English</button>
+        <button class="lang-btn" id="langES" onclick="setLanguage('es')">🇵🇷 Español</button>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link" data-en="← Back to Home" data-es="← Volver al Inicio"></a>
+
+        <h1 data-en="Privacy Policy" data-es="Política de Privacidad"></h1>
+        <p class="last-updated" data-en="Last Updated: November 25, 2024" data-es="Última Actualización: 25 de Noviembre, 2024"></p>
+
+        <div class="section">
+            <p data-en="At Akashic Works, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your information when you use our cognitive training programs."
+               data-es="En Akashic Works, tomamos en serio tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información cuando usas nuestros programas de entrenamiento cognitivo."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="1. Information We Collect" data-es="1. Información que Recopilamos"></h2>
+            
+            <h3 data-en="Account Information" data-es="Información de Cuenta"></h3>
+            <p data-en="When you create an account, we collect:"
+               data-es="Cuando creas una cuenta, recopilamos:"></p>
+            <ul>
+                <li data-en="Username" data-es="Nombre de usuario"></li>
+                <li data-en="Password (encrypted)" data-es="Contraseña (encriptada)"></li>
+                <li data-en="Email address (if provided)" data-es="Dirección de correo electrónico (si se proporciona)"></li>
+            </ul>
+
+            <h3 data-en="Performance Data" data-es="Datos de Rendimiento"></h3>
+            <p data-en="We collect data about your performance in our training programs, including:"
+               data-es="Recopilamos datos sobre tu rendimiento en nuestros programas de entrenamiento, incluyendo:"></p>
+            <ul>
+                <li data-en="Scores and completion times" data-es="Puntajes y tiempos de finalización"></li>
+                <li data-en="Number of sessions completed" data-es="Número de sesiones completadas"></li>
+                <li data-en="Personal records and statistics" data-es="Récords personales y estadísticas"></li>
+                <li data-en="Progress tracking data" data-es="Datos de seguimiento de progreso"></li>
+            </ul>
+
+            <h3 data-en="Usage Data" data-es="Datos de Uso"></h3>
+            <p data-en="We may collect information about how you use our services:"
+               data-es="Podemos recopilar información sobre cómo usas nuestros servicios:"></p>
+            <ul>
+                <li data-en="Device type and browser information" data-es="Tipo de dispositivo e información del navegador"></li>
+                <li data-en="IP address (anonymized)" data-es="Dirección IP (anonimizada)"></li>
+                <li data-en="Session timestamps" data-es="Marcas de tiempo de sesión"></li>
+                <li data-en="Feature usage patterns" data-es="Patrones de uso de características"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="2. How We Use Your Information" data-es="2. Cómo Usamos Tu Información"></h2>
+            <p data-en="We use the collected information to:"
+               data-es="Usamos la información recopilada para:"></p>
+            <ul>
+                <li data-en="Provide and maintain our cognitive training services" data-es="Proporcionar y mantener nuestros servicios de entrenamiento cognitivo"></li>
+                <li data-en="Track your progress and performance" data-es="Seguir tu progreso y rendimiento"></li>
+                <li data-en="Personalize your training experience" data-es="Personalizar tu experiencia de entrenamiento"></li>
+                <li data-en="Improve our programs and develop new features" data-es="Mejorar nuestros programas y desarrollar nuevas características"></li>
+                <li data-en="Send important updates and notifications (if you've provided an email)" data-es="Enviar actualizaciones importantes y notificaciones (si has proporcionado un correo)"></li>
+                <li data-en="Ensure security and prevent fraud" data-es="Garantizar la seguridad y prevenir fraudes"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="3. Data Storage and Security" data-es="3. Almacenamiento y Seguridad de Datos"></h2>
+            <p data-en="Your data is stored locally in your browser using localStorage technology. This means:"
+               data-es="Tus datos se almacenan localmente en tu navegador usando tecnología localStorage. Esto significa:"></p>
+            <ul>
+                <li data-en="Your data stays on your device" data-es="Tus datos permanecen en tu dispositivo"></li>
+                <li data-en="We do not store personal data on external servers (free tier)" data-es="No almacenamos datos personales en servidores externos (nivel gratuito)"></li>
+                <li data-en="You can clear your data at any time by clearing browser data" data-es="Puedes borrar tus datos en cualquier momento limpiando los datos del navegador"></li>
+                <li data-en="Pro users may have data synced to secure cloud servers" data-es="Los usuarios Pro pueden tener datos sincronizados en servidores en la nube seguros"></li>
+            </ul>
+            <p data-en="We implement industry-standard security measures to protect your information, including:"
+               data-es="Implementamos medidas de seguridad estándar de la industria para proteger tu información, incluyendo:"></p>
+            <ul>
+                <li data-en="Password hashing and encryption" data-es="Hash y encriptación de contraseñas"></li>
+                <li data-en="Secure HTTPS connections" data-es="Conexiones HTTPS seguras"></li>
+                <li data-en="Regular security audits" data-es="Auditorías de seguridad regulares"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="4. Cookies and Tracking" data-es="4. Cookies y Rastreo"></h2>
+            <p data-en="We use minimal cookies and local storage to:"
+               data-es="Usamos cookies mínimas y almacenamiento local para:"></p>
+            <ul>
+                <li data-en="Keep you logged in" data-es="Mantenerte conectado"></li>
+                <li data-en="Remember your language preference" data-es="Recordar tu preferencia de idioma"></li>
+                <li data-en="Track your free trial usage (3 sessions per day per program)" data-es="Rastrear tu uso de prueba gratuita (3 sesiones por día por programa)"></li>
+            </ul>
+            <p data-en="We do not use third-party tracking cookies or analytics services that collect personal information."
+               data-es="No usamos cookies de rastreo de terceros ni servicios de análisis que recopilen información personal."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="5. Data Sharing and Third Parties" data-es="5. Compartir Datos y Terceros"></h2>
+            <p data-en="We do not sell, rent, or share your personal information with third parties, except:"
+               data-es="No vendemos, alquilamos ni compartimos tu información personal con terceros, excepto:"></p>
+            <ul>
+                <li data-en="When required by law or legal process" data-es="Cuando sea requerido por ley o proceso legal"></li>
+                <li data-en="To protect the rights, property, or safety of Akashic Works or others" data-es="Para proteger los derechos, propiedad o seguridad de Akashic Works u otros"></li>
+                <li data-en="With service providers who help us operate our services (under strict confidentiality agreements)" data-es="Con proveedores de servicios que nos ayudan a operar nuestros servicios (bajo acuerdos de confidencialidad estrictos)"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="6. Your Rights" data-es="6. Tus Derechos"></h2>
+            <p data-en="You have the right to:"
+               data-es="Tienes derecho a:"></p>
+            <ul>
+                <li data-en="Access your personal data" data-es="Acceder a tus datos personales"></li>
+                <li data-en="Correct inaccurate data" data-es="Corregir datos inexactos"></li>
+                <li data-en="Delete your account and associated data" data-es="Eliminar tu cuenta y datos asociados"></li>
+                <li data-en="Export your training data (Pro users)" data-es="Exportar tus datos de entrenamiento (usuarios Pro)"></li>
+                <li data-en="Opt out of promotional communications" data-es="Optar por no recibir comunicaciones promocionales"></li>
+            </ul>
+            <p data-en="To exercise these rights, contact us at: <a href='mailto:support@akashic.works'>support@akashic.works</a>"
+               data-es="Para ejercer estos derechos, contáctanos en: <a href='mailto:support@akashic.works'>support@akashic.works</a>"></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="7. Children's Privacy" data-es="7. Privacidad de Menores"></h2>
+            <p data-en="Our services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately."
+               data-es="Nuestros servicios no están destinados a menores de 13 años. No recopilamos conscientemente información personal de menores de 13 años. Si crees que hemos recopilado información de un menor de 13 años, contáctanos inmediatamente."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="8. International Users" data-es="8. Usuarios Internacionales"></h2>
+            <p data-en="Akashic Works is based in Puerto Rico. By using our services, you consent to the transfer and processing of your data in Puerto Rico and the United States, which may have different data protection laws than your country."
+               data-es="Akashic Works tiene su base en Puerto Rico. Al usar nuestros servicios, consientes la transferencia y procesamiento de tus datos en Puerto Rico y los Estados Unidos, que pueden tener leyes de protección de datos diferentes a tu país."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="9. Changes to This Privacy Policy" data-es="9. Cambios a Esta Política de Privacidad"></h2>
+            <p data-en="We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date. We encourage you to review this Privacy Policy periodically."
+               data-es="Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos sobre cambios significativos publicando la nueva Política de Privacidad en esta página y actualizando la fecha de 'Última Actualización'. Te animamos a revisar esta Política de Privacidad periódicamente."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="10. Contact Us" data-es="10. Contáctanos"></h2>
+            <p data-en="If you have any questions about this Privacy Policy or our data practices, please contact us:"
+               data-es="Si tienes alguna pregunta sobre esta Política de Privacidad o nuestras prácticas de datos, contáctanos:"></p>
+            <p><strong>Email:</strong> <a href="mailto:support@akashic.works">support@akashic.works</a></p>
+            <p><strong data-en="Akashic Works" data-es="Akashic Works"></strong><br>
+            <span data-en="San Juan, Puerto Rico" data-es="San Juan, Puerto Rico"></span></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+            <p data-en="By using Akashic Works, you agree to this Privacy Policy." data-es="Al usar Akashic Works, aceptas esta Política de Privacidad."></p>
+            <a href="index.html" class="back-link" data-en="← Back to Home" data-es="← Volver al Inicio" style="margin-top: 20px; display: inline-block;"></a>
+        </div>
+    </div>
+
+    <script>
+        // Current language
+        let currentLang = localStorage.getItem('akashic_lang') || 'en';
+
+        // Language toggle function
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('akashic_lang', lang);
+            
+            // Update button states
+            document.getElementById('langEN').classList.toggle('active', lang === 'en');
+            document.getElementById('langES').classList.toggle('active', lang === 'es');
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text) {
+                    el.innerHTML = text;
+                }
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang === 'es' ? 'es' : 'en';
+        }
+
+        // Initialize language on page load
+        setLanguage(currentLang);
+    </script>
+</body>
+</html>
