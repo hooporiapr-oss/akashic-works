@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Akashic Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1034 50%, #2d1b4e 100%);
+            min-height: 100vh;
+            color: #e8e8f0;
+            padding: 20px;
+        }
+
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 25px;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+        }
+
+        .lang-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Georgia', serif;
+            transition: all 0.3s ease;
+            background: transparent;
+            color: #b8b8cc;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            color: #1a1034;
+            font-weight: bold;
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 3px solid rgba(212, 175, 55, 0.5);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ff8c00;
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #b8b8cc;
+            font-style: italic;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #ffd700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #d4af37;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #c4c4d8;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            line-height: 1.8;
+            color: #c4c4d8;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #ffd700;
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff8c00;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin-top: 70px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .lang-toggle {
+                top: 10px;
+                right: 10px;
+            }
+            .lang-btn {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" id="langEN" onclick="setLanguage('en')">🇺🇸 English</button>
+        <button class="lang-btn" id="langES" onclick="setLanguage('es')">🇵🇷 Español</button>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link" data-en="← Back to Home" data-es="← Volver al Inicio"></a>
+
+        <h1 data-en="Terms of Service" data-es="Términos de Servicio"></h1>
+        <p class="last-updated" data-en="Last Updated: November 25, 2024" data-es="Última Actualización: 25 de Noviembre, 2024"></p>
+
+        <div class="section">
+            <p data-en="Welcome to Akashic Works. By accessing or using our cognitive training programs, you agree to be bound by these Terms of Service. Please read them carefully."
+               data-es="Bienvenido a Akashic Works. Al acceder o usar nuestros programas de entrenamiento cognitivo, aceptas estar sujeto a estos Términos de Servicio. Por favor, léelos cuidadosamente."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="1. Acceptance of Terms" data-es="1. Aceptación de Términos"></h2>
+            <p data-en="By creating an account or using any of our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our services."
+               data-es="Al crear una cuenta o usar cualquiera de nuestros servicios, reconoces que has leído, entendido y aceptas estar sujeto a estos Términos de Servicio y nuestra Política de Privacidad. Si no estás de acuerdo con estos términos, por favor no uses nuestros servicios."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="2. Service Description" data-es="2. Descripción del Servicio"></h2>
+            <p data-en="Akashic Works provides six cognitive training programs designed to enhance mental performance:"
+               data-es="Akashic Works proporciona seis programas de entrenamiento cognitivo diseñados para mejorar el rendimiento mental:"></p>
+            <ul>
+                <li data-en="Number Memory" data-es="Memoria de Números"></li>
+                <li data-en="Sequence Memory" data-es="Memoria de Secuencia"></li>
+                <li data-en="Memory Match" data-es="Parejas de Memoria"></li>
+                <li data-en="Reaction Time" data-es="Tiempo de Reacción"></li>
+                <li data-en="Reflex Training" data-es="Entrenamiento de Reflejos"></li>
+                <li data-en="Word Search (English and Spanish)" data-es="Sopa de Letras (Inglés y Español)"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="3. Free Trial and Subscription Plans" data-es="3. Prueba Gratuita y Planes de Suscripción"></h2>
+            
+            <h3 data-en="Free Trial" data-es="Prueba Gratuita"></h3>
+            <ul>
+                <li data-en="Each user receives 3 free sessions per day for each program (18 total free sessions daily)" data-es="Cada usuario recibe 3 sesiones gratis por día para cada programa (18 sesiones gratis diarias en total)"></li>
+                <li data-en="Free sessions reset daily at midnight (local time)" data-es="Las sesiones gratis se reinician diariamente a medianoche (hora local)"></li>
+                <li data-en="No credit card required for free trial" data-es="No se requiere tarjeta de crédito para la prueba gratuita"></li>
+                <li data-en="Free users have access to basic progress tracking" data-es="Los usuarios gratuitos tienen acceso a seguimiento básico de progreso"></li>
+            </ul>
+
+            <h3 data-en="Pro Unlimited Subscription" data-es="Suscripción Pro Ilimitada"></h3>
+            <ul>
+                <li data-en="Price: $99 USD per year" data-es="Precio: $99 USD por año"></li>
+                <li data-en="Unlimited sessions across all programs" data-es="Sesiones ilimitadas en todos los programas"></li>
+                <li data-en="Advanced statistics and analytics" data-es="Estadísticas y análisis avanzados"></li>
+                <li data-en="Performance tracking over time" data-es="Seguimiento de rendimiento a lo largo del tiempo"></li>
+                <li data-en="Priority customer support" data-es="Soporte al cliente prioritario"></li>
+                <li data-en="Ad-free experience" data-es="Experiencia sin anuncios"></li>
+                <li data-en="Data export capabilities" data-es="Capacidades de exportación de datos"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="4. User Accounts" data-es="4. Cuentas de Usuario"></h2>
+            <p data-en="To use our services, you must:"
+               data-es="Para usar nuestros servicios, debes:"></p>
+            <ul>
+                <li data-en="Be at least 13 years of age" data-es="Tener al menos 13 años de edad"></li>
+                <li data-en="Provide accurate account information" data-es="Proporcionar información de cuenta precisa"></li>
+                <li data-en="Keep your password secure and confidential" data-es="Mantener tu contraseña segura y confidencial"></li>
+                <li data-en="Not share your account with others" data-es="No compartir tu cuenta con otros"></li>
+                <li data-en="Notify us immediately of any unauthorized use of your account" data-es="Notificarnos inmediatamente de cualquier uso no autorizado de tu cuenta"></li>
+            </ul>
+            <p data-en="You are responsible for all activities that occur under your account."
+               data-es="Eres responsable de todas las actividades que ocurran bajo tu cuenta."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="5. Acceptable Use Policy" data-es="5. Política de Uso Aceptable"></h2>
+            <p data-en="You agree NOT to:"
+               data-es="Aceptas NO:"></p>
+            <ul>
+                <li data-en="Use the service for any illegal purpose" data-es="Usar el servicio para ningún propósito ilegal"></li>
+                <li data-en="Attempt to hack, reverse engineer, or compromise our systems" data-es="Intentar hackear, hacer ingeniería inversa o comprometer nuestros sistemas"></li>
+                <li data-en="Use bots, scripts, or automated tools to manipulate scores or game sessions" data-es="Usar bots, scripts o herramientas automatizadas para manipular puntajes o sesiones de juego"></li>
+                <li data-en="Create multiple accounts to circumvent free trial limits" data-es="Crear múltiples cuentas para eludir los límites de prueba gratuita"></li>
+                <li data-en="Share or distribute Pro subscription access without authorization" data-es="Compartir o distribuir acceso a suscripción Pro sin autorización"></li>
+                <li data-en="Harass, abuse, or harm other users" data-es="Acosar, abusar o dañar a otros usuarios"></li>
+                <li data-en="Upload malicious code or viruses" data-es="Subir código malicioso o virus"></li>
+            </ul>
+            <p data-en="Violation of this policy may result in immediate termination of your account."
+               data-es="La violación de esta política puede resultar en la terminación inmediata de tu cuenta."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="6. Intellectual Property" data-es="6. Propiedad Intelectual"></h2>
+            <p data-en="All content, features, and functionality of Akashic Works, including but not limited to:"
+               data-es="Todo el contenido, características y funcionalidad de Akashic Works, incluyendo pero no limitado a:"></p>
+            <ul>
+                <li data-en="Training programs and algorithms" data-es="Programas de entrenamiento y algoritmos"></li>
+                <li data-en="User interface and design" data-es="Interfaz de usuario y diseño"></li>
+                <li data-en="Graphics, logos, and trademarks" data-es="Gráficos, logos y marcas registradas"></li>
+                <li data-en="Software code and architecture" data-es="Código de software y arquitectura"></li>
+            </ul>
+            <p data-en="are owned by Akashic Works and protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or reverse engineer any part of our services without prior written permission."
+               data-es="son propiedad de Akashic Works y están protegidos por derechos de autor, marcas registradas y otras leyes de propiedad intelectual. No puedes copiar, modificar, distribuir o hacer ingeniería inversa de ninguna parte de nuestros servicios sin permiso escrito previo."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="7. Payment and Refunds" data-es="7. Pago y Reembolsos"></h2>
+            
+            <h3 data-en="Payment Terms" data-es="Términos de Pago"></h3>
+            <ul>
+                <li data-en="Pro subscriptions are billed annually at $99 USD" data-es="Las suscripciones Pro se facturan anualmente a $99 USD"></li>
+                <li data-en="Payment is processed securely through our payment provider" data-es="El pago se procesa de forma segura a través de nuestro proveedor de pagos"></li>
+                <li data-en="Subscriptions automatically renew unless cancelled" data-es="Las suscripciones se renuevan automáticamente a menos que se cancelen"></li>
+            </ul>
+
+            <h3 data-en="Refund Policy" data-es="Política de Reembolsos"></h3>
+            <p data-en="<strong>All sales are final.</strong> Because we provide generous free trial access (3 sessions per day, per program), we do not offer refunds on Pro subscriptions. We encourage all users to thoroughly test our services using the free trial before purchasing a Pro subscription."
+               data-es="<strong>Todas las ventas son finales.</strong> Debido a que proporcionamos generoso acceso de prueba gratuita (3 sesiones por día, por programa), no ofrecemos reembolsos en suscripciones Pro. Alentamos a todos los usuarios a probar exhaustivamente nuestros servicios usando la prueba gratuita antes de comprar una suscripción Pro."></p>
+            <p data-en="Exceptions may be made only in cases of:"
+               data-es="Se pueden hacer excepciones solo en casos de:"></p>
+            <ul>
+                <li data-en="Technical errors resulting in duplicate charges" data-es="Errores técnicos que resulten en cargos duplicados"></li>
+                <li data-en="Unauthorized charges (subject to verification)" data-es="Cargos no autorizados (sujeto a verificación)"></li>
+                <li data-en="Service failures that prevent access to Pro features" data-es="Fallas del servicio que impidan el acceso a funciones Pro"></li>
+            </ul>
+            <p data-en="To report any billing issues, contact support@akashic.works within 7 days of the charge."
+               data-es="Para reportar cualquier problema de facturación, contacta a support@akashic.works dentro de 7 días del cargo."></p>
+
+            <h3 data-en="Cancellation" data-es="Cancelación"></h3>
+            <p data-en="You may cancel your Pro subscription at any time. Upon cancellation:"
+               data-es="Puedes cancelar tu suscripción Pro en cualquier momento. Al cancelar:"></p>
+            <ul>
+                <li data-en="You will retain Pro access until the end of your current billing period" data-es="Mantendrás acceso Pro hasta el final de tu período de facturación actual"></li>
+                <li data-en="Your account will revert to the free trial plan" data-es="Tu cuenta volverá al plan de prueba gratuita"></li>
+                <li data-en="Your data and progress will be preserved" data-es="Tus datos y progreso se preservarán"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="8. Disclaimer of Warranties" data-es="8. Renuncia de Garantías"></h2>
+            <p data-en="AKASHIC WORKS IS PROVIDED 'AS IS' AND 'AS AVAILABLE' WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:"
+               data-es="AKASHIC WORKS SE PROPORCIONA 'TAL CUAL' Y 'SEGÚN DISPONIBILIDAD' SIN GARANTÍAS DE NINGÚN TIPO, YA SEA EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A:"></p>
+            <ul>
+                <li data-en="Accuracy, reliability, or completeness of the service" data-es="Precisión, confiabilidad o integridad del servicio"></li>
+                <li data-en="Fitness for a particular purpose" data-es="Idoneidad para un propósito particular"></li>
+                <li data-en="Uninterrupted or error-free operation" data-es="Operación ininterrumpida o sin errores"></li>
+                <li data-en="Specific cognitive improvements or results" data-es="Mejoras cognitivas específicas o resultados"></li>
+            </ul>
+            <p data-en="We do not guarantee that our training programs will improve cognitive performance. Results may vary by individual."
+               data-es="No garantizamos que nuestros programas de entrenamiento mejorarán el rendimiento cognitivo. Los resultados pueden variar según el individuo."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="9. Limitation of Liability" data-es="9. Limitación de Responsabilidad"></h2>
+            <p data-en="TO THE MAXIMUM EXTENT PERMITTED BY LAW, AKASHIC WORKS SHALL NOT BE LIABLE FOR:"
+               data-es="EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, AKASHIC WORKS NO SERÁ RESPONSABLE POR:"></p>
+            <ul>
+                <li data-en="Any indirect, incidental, special, or consequential damages" data-es="Cualquier daño indirecto, incidental, especial o consecuente"></li>
+                <li data-en="Loss of profits, data, or business opportunities" data-es="Pérdida de ganancias, datos u oportunidades de negocio"></li>
+                <li data-en="Damages resulting from unauthorized access to your account" data-es="Daños resultantes de acceso no autorizado a tu cuenta"></li>
+                <li data-en="Service interruptions, bugs, or technical issues" data-es="Interrupciones del servicio, errores o problemas técnicos"></li>
+            </ul>
+            <p data-en="Our total liability to you for any claim shall not exceed the amount you paid us in the 12 months prior to the claim."
+               data-es="Nuestra responsabilidad total hacia ti por cualquier reclamo no excederá la cantidad que nos pagaste en los 12 meses previos al reclamo."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="10. Indemnification" data-es="10. Indemnización"></h2>
+            <p data-en="You agree to indemnify and hold harmless Akashic Works, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:"
+               data-es="Aceptas indemnizar y eximir de responsabilidad a Akashic Works, sus oficiales, directores, empleados y agentes de cualquier reclamo, daño, pérdida, responsabilidad y gasto (incluyendo honorarios legales) que surja de:"></p>
+            <ul>
+                <li data-en="Your use of our services" data-es="Tu uso de nuestros servicios"></li>
+                <li data-en="Your violation of these Terms of Service" data-es="Tu violación de estos Términos de Servicio"></li>
+                <li data-en="Your violation of any third-party rights" data-es="Tu violación de cualquier derecho de terceros"></li>
+                <li data-en="Your breach of applicable laws or regulations" data-es="Tu incumplimiento de leyes o regulaciones aplicables"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 data-en="11. Modifications to Service and Terms" data-es="11. Modificaciones al Servicio y Términos"></h2>
+            <p data-en="We reserve the right to:"
+               data-es="Nos reservamos el derecho de:"></p>
+            <ul>
+                <li data-en="Modify, suspend, or discontinue any part of our services" data-es="Modificar, suspender o discontinuar cualquier parte de nuestros servicios"></li>
+                <li data-en="Update these Terms of Service at any time" data-es="Actualizar estos Términos de Servicio en cualquier momento"></li>
+                <li data-en="Change subscription pricing with 30 days' notice" data-es="Cambiar los precios de suscripción con aviso de 30 días"></li>
+            </ul>
+            <p data-en="Significant changes will be communicated via email (if provided) or through the service. Continued use of our services after changes constitutes acceptance of the new terms."
+               data-es="Los cambios significativos se comunicarán por correo electrónico (si se proporcionó) o a través del servicio. El uso continuado de nuestros servicios después de los cambios constituye la aceptación de los nuevos términos."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="12. Termination" data-es="12. Terminación"></h2>
+            <p data-en="We may terminate or suspend your account immediately, without prior notice, for:"
+               data-es="Podemos terminar o suspender tu cuenta inmediatamente, sin previo aviso, por:"></p>
+            <ul>
+                <li data-en="Violation of these Terms of Service" data-es="Violación de estos Términos de Servicio"></li>
+                <li data-en="Fraudulent or illegal activity" data-es="Actividad fraudulenta o ilegal"></li>
+                <li data-en="Abuse of the service or other users" data-es="Abuso del servicio o de otros usuarios"></li>
+                <li data-en="Non-payment of subscription fees" data-es="Falta de pago de tarifas de suscripción"></li>
+            </ul>
+            <p data-en="You may terminate your account at any time by contacting us at support@akashic.works"
+               data-es="Puedes terminar tu cuenta en cualquier momento contactándonos en support@akashic.works"></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="13. Governing Law and Jurisdiction" data-es="13. Ley Aplicable y Jurisdicción"></h2>
+            <p data-en="These Terms of Service shall be governed by and construed in accordance with the laws of Puerto Rico and the United States, without regard to conflict of law principles."
+               data-es="Estos Términos de Servicio se regirán e interpretarán de acuerdo con las leyes de Puerto Rico y los Estados Unidos, sin tener en cuenta los principios de conflicto de leyes."></p>
+            <p data-en="Any disputes arising from these terms or your use of our services shall be resolved in the courts of Puerto Rico."
+               data-es="Cualquier disputa que surja de estos términos o tu uso de nuestros servicios se resolverá en los tribunales de Puerto Rico."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="14. Severability" data-es="14. Separabilidad"></h2>
+            <p data-en="If any provision of these Terms of Service is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect."
+               data-es="Si se determina que alguna disposición de estos Términos de Servicio es inválida o inaplicable, las disposiciones restantes continuarán en pleno vigor y efecto."></p>
+        </div>
+
+        <div class="section">
+            <h2 data-en="15. Contact Information" data-es="15. Información de Contacto"></h2>
+            <p data-en="For questions, concerns, or support regarding these Terms of Service or our services, contact us:"
+               data-es="Para preguntas, inquietudes o soporte relacionado con estos Términos de Servicio o nuestros servicios, contáctanos:"></p>
+            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#562523262639242216373d37253e3f35782139243d25"><span class="__cf_email__" data-cfemail="790a0c0909160b0d391812180a11101a570e160b120a">[email&#160;protected]</span></a></p>
+            <p><strong data-en="Akashic Works" data-es="Akashic Works"></strong><br>
+            <span data-en="San Juan, Puerto Rico" data-es="San Juan, Puerto Rico"></span></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+            <p data-en="By using Akashic Works, you agree to these Terms of Service." data-es="Al usar Akashic Works, aceptas estos Términos de Servicio."></p>
+            <a href="index.html" class="back-link" data-en="← Back to Home" data-es="← Volver al Inicio" style="margin-top: 20px; display: inline-block;"></a>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Current language
+        let currentLang = localStorage.getItem('akashic_lang') || 'en';
+
+        // Language toggle function
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('akashic_lang', lang);
+            
+            // Update button states
+            document.getElementById('langEN').classList.toggle('active', lang === 'en');
+            document.getElementById('langES').classList.toggle('active', lang === 'es');
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text) {
+                    el.innerHTML = text;
+                }
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang === 'es' ? 'es' : 'en';
+        }
+
+        // Initialize language on page load
+        setLanguage(currentLang);
+    </script>
+</body>
+</html>
