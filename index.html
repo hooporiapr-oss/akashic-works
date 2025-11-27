@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akashic Works - Cognitive Training Programs | Free Trial</title>
-    <meta name="description" content="Six scientifically-backed cognitive training programs in English and Spanish. Try 3 free sessions daily per program.">
+    <meta name="description" content="Ten scientifically-backed cognitive training programs in English and Spanish. Try 3 free sessions daily per program.">
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:'Georgia',serif;background:linear-gradient(135deg,#0a0e27 0%,#1a1034 50%,#2d1b4e 100%);color:#e8e8f0;overflow-x:hidden}
@@ -16,13 +16,13 @@
         .star{position:absolute;width:2px;height:2px;background:#ffd700;border-radius:50%;animation:twinkle 3s infinite}
         @keyframes twinkle{0%,100%{opacity:0.3}50%{opacity:1}}
         .content{position:relative;z-index:1;max-width:1400px;margin:0 auto;padding:100px 20px 40px}
-        .hero{text-align:center;margin-bottom:80px;animation:fadeInDown 1s ease}
+        .hero{text-align:center;margin-bottom:60px;animation:fadeInDown 1s ease}
         @keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
         .hero-title{font-size:4em;font-weight:bold;background:linear-gradient(135deg,#ffd700,#ff8c00,#8a2be2,#ffd700);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:20px;letter-spacing:8px;animation:gradientShift 5s ease infinite}
         @keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
         .hero-subtitle{font-size:1.6em;color:#d4af37;margin-bottom:30px;font-style:italic}
         .hero-badge{display:inline-block;background:linear-gradient(135deg,#51cf66,#2ecc71);color:white;padding:12px 30px;border-radius:30px;font-size:1.2em;font-weight:bold;margin-bottom:20px}
-        .tab-nav{display:flex;justify-content:center;gap:20px;margin-bottom:60px}
+        .tab-nav{display:flex;justify-content:center;gap:20px;margin-bottom:40px}
         .tab-btn{background:rgba(255,255,255,0.05);border:3px solid rgba(212,175,55,0.3);padding:20px 50px;border-radius:15px;cursor:pointer;transition:all 0.3s ease;font-size:1.3em;color:#e8e8f0;font-family:'Georgia',serif}
         .tab-btn:hover{border-color:#ffd700;background:rgba(255,215,0,0.1);transform:translateY(-3px)}
         .tab-btn.active{border-color:#ffd700;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,140,0,0.2));box-shadow:0 10px 30px rgba(255,215,0,0.3)}
@@ -30,50 +30,52 @@
         .tab-content{display:none}
         .tab-content.active{display:block;animation:fadeIn 0.5s ease}
         @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-        .trial-banner{background:linear-gradient(135deg,#ffd700,#ff8c00);padding:25px 40px;text-align:center;color:#1a1034;font-weight:bold;font-size:1.4em;border-radius:20px;margin-bottom:60px;box-shadow:0 10px 40px rgba(255,215,0,0.4)}
-        .trial-highlight{font-size:1.3em;display:block;margin-top:10px}
-        .programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin-bottom:60px}
-        .program-card{background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:3px solid rgba(212,175,55,0.5);border-radius:20px;padding:35px;transition:all 0.3s ease;color:inherit;display:block}
-        .program-card:hover{transform:translateY(-10px);border-color:#ffd700;box-shadow:0 20px 60px rgba(255,215,0,0.3)}
-        .program-icon{font-size:4em;text-align:center;margin-bottom:20px}
-        .program-title{font-size:1.8em;color:#ffd700;text-align:center;margin-bottom:15px}
-        .program-description{color:#c4c4d8;text-align:center;line-height:1.6;margin-bottom:20px}
-        .free-badge{display:block;background:linear-gradient(135deg,#51cf66,#2ecc71);color:#fff;padding:8px 20px;border-radius:20px;font-weight:bold;font-size:0.9em;text-align:center;width:fit-content;margin:0 auto 15px}
-        .game-lang-buttons{display:flex;flex-direction:column;gap:12px;margin-top:15px}
-        .game-lang-btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:25px;font-weight:bold;font-size:1.05em;text-decoration:none;transition:all 0.3s ease;font-family:'Georgia',serif}
+        .trial-banner{background:linear-gradient(135deg,#ffd700,#ff8c00);padding:20px 30px;text-align:center;color:#1a1034;font-weight:bold;font-size:1.3em;border-radius:20px;margin-bottom:40px;box-shadow:0 10px 40px rgba(255,215,0,0.4)}
+        .trial-highlight{font-size:1.2em;display:block;margin-top:8px}
+        .section-title{color:#ffd700;font-size:1.8em;text-align:center;margin:40px 0 25px;padding-bottom:10px;border-bottom:2px solid rgba(212,175,55,0.3)}
+        .programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-bottom:40px}
+        .program-card{background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:3px solid rgba(212,175,55,0.5);border-radius:20px;padding:25px;transition:all 0.3s ease;color:inherit;display:block}
+        .program-card:hover{transform:translateY(-8px);border-color:#ffd700;box-shadow:0 15px 50px rgba(255,215,0,0.3)}
+        .program-icon{font-size:3em;text-align:center;margin-bottom:15px}
+        .program-title{font-size:1.5em;color:#ffd700;text-align:center;margin-bottom:10px}
+        .program-description{color:#c4c4d8;text-align:center;line-height:1.5;margin-bottom:15px;font-size:0.9em}
+        .free-badge{display:block;background:linear-gradient(135deg,#51cf66,#2ecc71);color:#fff;padding:6px 15px;border-radius:15px;font-weight:bold;font-size:0.8em;text-align:center;width:fit-content;margin:0 auto 12px}
+        .game-lang-buttons{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+        .game-lang-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:20px;font-weight:bold;font-size:0.95em;text-decoration:none;transition:all 0.3s ease;font-family:'Georgia',serif}
         .game-lang-btn.english{background:linear-gradient(135deg,#ffd700,#ff8c00);color:#1a1034}
         .game-lang-btn.spanish{background:linear-gradient(135deg,#ef3340,#0050f0);color:#fff}
-        .game-lang-btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.3)}
+        .game-lang-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.3)}
         @media(min-width:500px){.game-lang-buttons{flex-direction:row}.game-lang-btn{flex:1}}
-        .healthcare-hero{background:linear-gradient(135deg,rgba(255,215,0,0.1),rgba(255,140,0,0.1));border:3px solid #ffd700;border-radius:20px;padding:60px 40px;text-align:center;margin-bottom:60px}
-        .healthcare-hero h2{font-size:3em;color:#ffd700;margin-bottom:20px}
-        .healthcare-icon{font-size:5em;margin-bottom:20px}
-        .healthcare-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin:40px 0}
-        .feature-box{background:rgba(255,255,255,0.05);border:2px solid rgba(212,175,55,0.3);border-radius:15px;padding:25px;text-align:center}
-        .feature-box-icon{font-size:3em;margin-bottom:15px}
-        .feature-box h3{color:#ffd700;font-size:1.3em;margin-bottom:10px}
-        .feature-box p{color:#c4c4d8;line-height:1.6}
-        .pricing-quick{background:rgba(0,0,0,0.3);border:2px solid #ffd700;border-radius:15px;padding:30px;margin:40px 0}
-        .pricing-quick h3{color:#ffd700;font-size:2em;margin-bottom:20px;text-align:center}
-        .price-tiers{display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px}
-        .price-tier{text-align:center;flex:1;min-width:200px}
-        .price-tier-name{color:#d4af37;font-size:1.2em;margin-bottom:10px}
-        .price-tier-price{font-size:2.5em;color:#ffd700;font-weight:bold}
+        .healthcare-hero{background:linear-gradient(135deg,rgba(255,215,0,0.1),rgba(255,140,0,0.1));border:3px solid #ffd700;border-radius:20px;padding:50px 30px;text-align:center;margin-bottom:50px}
+        .healthcare-hero h2{font-size:2.5em;color:#ffd700;margin-bottom:20px}
+        .healthcare-icon{font-size:4em;margin-bottom:15px}
+        .healthcare-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:30px 0}
+        .feature-box{background:rgba(255,255,255,0.05);border:2px solid rgba(212,175,55,0.3);border-radius:15px;padding:20px;text-align:center}
+        .feature-box-icon{font-size:2.5em;margin-bottom:10px}
+        .feature-box h3{color:#ffd700;font-size:1.1em;margin-bottom:8px}
+        .feature-box p{color:#c4c4d8;line-height:1.5;font-size:0.85em}
+        .pricing-quick{background:rgba(0,0,0,0.3);border:2px solid #ffd700;border-radius:15px;padding:25px;margin:30px 0}
+        .pricing-quick h3{color:#ffd700;font-size:1.8em;margin-bottom:20px;text-align:center}
+        .price-tiers{display:flex;justify-content:space-around;flex-wrap:wrap;gap:15px}
+        .price-tier{text-align:center;flex:1;min-width:180px}
+        .price-tier-name{color:#d4af37;font-size:1.1em;margin-bottom:8px}
+        .price-tier-price{font-size:2.2em;color:#ffd700;font-weight:bold}
         .price-tier-price span{font-size:0.4em;color:#b8b8cc}
-        .price-tier-per{color:#51cf66;margin-top:5px}
-        .cta-buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-        .btn{display:inline-block;padding:18px 45px;border-radius:30px;font-weight:bold;font-size:1.2em;text-decoration:none;transition:all 0.3s ease;font-family:'Georgia',serif}
+        .price-tier-per{color:#51cf66;margin-top:5px;font-size:0.9em}
+        .cta-buttons{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+        .btn{display:inline-block;padding:15px 40px;border-radius:30px;font-weight:bold;font-size:1.1em;text-decoration:none;transition:all 0.3s ease;font-family:'Georgia',serif}
         .btn-primary{background:linear-gradient(135deg,#ffd700,#ff8c00);color:#1a1034}
         .btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,215,0,0.5)}
         .btn-secondary{background:rgba(255,255,255,0.1);color:#ffd700;border:2px solid #ffd700}
         .btn-secondary:hover{background:rgba(255,215,0,0.2);transform:translateY(-3px)}
-        .savings-badge{background:linear-gradient(135deg,#51cf66,#2ecc71);color:white;padding:20px 40px;border-radius:15px;text-align:center;font-size:1.5em;font-weight:bold;margin:30px 0}
-        .footer{text-align:center;padding:60px 20px;border-top:2px solid rgba(212,175,55,0.3);margin-top:80px}
-        .footer-links{display:flex;gap:30px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+        .savings-badge{background:linear-gradient(135deg,#51cf66,#2ecc71);color:white;padding:15px 30px;border-radius:15px;text-align:center;font-size:1.3em;font-weight:bold;margin:25px 0}
+        .footer{text-align:center;padding:50px 20px;border-top:2px solid rgba(212,175,55,0.3);margin-top:60px}
+        .footer-links{display:flex;gap:25px;justify-content:center;margin:15px 0;flex-wrap:wrap}
         .footer-links a{color:#d4af37;text-decoration:none;transition:color 0.3s ease}
         .footer-links a:hover{color:#ffd700}
-        @media(max-width:768px){.content{padding:80px 15px 30px}.hero-title{font-size:2.5em;letter-spacing:3px}.hero-subtitle{font-size:1.2em}.tab-nav{flex-direction:column;gap:15px}.tab-btn{padding:15px 30px;font-size:1.1em}.healthcare-hero h2{font-size:2em}.healthcare-hero{padding:40px 25px}.trial-banner{padding:20px 25px;font-size:1.1em}.programs-grid{grid-template-columns:1fr}.btn{padding:15px 35px;font-size:1.1em}.lang-toggle{top:10px;right:10px}.lang-btn{padding:8px 12px;font-size:0.85em}}
-        @media(max-width:500px){.hero-title{font-size:2em}.program-card{padding:25px}.price-tiers{flex-direction:column}}
+        .new-badge{background:#e74c3c;color:#fff;font-size:0.6em;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle}
+        @media(max-width:768px){.content{padding:80px 15px 30px}.hero-title{font-size:2.5em;letter-spacing:3px}.hero-subtitle{font-size:1.2em}.tab-nav{flex-direction:column;gap:15px}.tab-btn{padding:15px 30px;font-size:1.1em}.healthcare-hero h2{font-size:1.8em}.healthcare-hero{padding:30px 20px}.trial-banner{padding:15px 20px;font-size:1em}.programs-grid{grid-template-columns:1fr}.btn{padding:12px 30px;font-size:1em}.lang-toggle{top:10px;right:10px}.lang-btn{padding:8px 12px;font-size:0.85em}.section-title{font-size:1.4em}}
+        @media(max-width:500px){.hero-title{font-size:2em}.program-card{padding:20px}.price-tiers{flex-direction:column}}
     </style>
 </head>
 <body>
@@ -85,7 +87,7 @@
     <div class="content">
         <div class="hero">
             <h1 class="hero-title">AKASHIC WORKS</h1>
-            <p class="hero-subtitle" data-en="Six Scientifically-Backed Cognitive Training Programs" data-es="Seis Programas de Entrenamiento Cognitivo Científicamente Respaldados"></p>
+            <p class="hero-subtitle" data-en="Ten Scientifically-Backed Cognitive Training Programs" data-es="Diez Programas de Entrenamiento Cognitivo Científicamente Respaldados"></p>
             <div class="hero-badge" data-en="🎮 Try FREE: 3 Sessions Daily Per Program" data-es="🎮 Prueba GRATIS: 3 Sesiones Diarias Por Programa"></div>
         </div>
         <div class="tab-nav">
@@ -100,16 +102,19 @@
         </div>
         <div class="tab-content active" id="individualContent">
             <div class="trial-banner">
-                <span data-en="🎯 18 Total Free Sessions Daily | No Credit Card Required" data-es="🎯 18 Sesiones Gratis Diarias en Total | Sin Tarjeta de Crédito"></span>
+                <span data-en="🎯 30 Total Free Sessions Daily | No Credit Card Required" data-es="🎯 30 Sesiones Gratis Diarias en Total | Sin Tarjeta de Crédito"></span>
                 <span class="trial-highlight" data-en="Start Training Your Mind Today!" data-es="¡Comienza a Entrenar Tu Mente Hoy!"></span>
             </div>
+
+            <!-- MEMORY GAMES -->
+            <h2 class="section-title" data-en="🧠 Memory Training" data-es="🧠 Entrenamiento de Memoria"></h2>
             <div class="programs-grid">
                 <!-- Number Memory -->
                 <div class="program-card">
                     <div class="program-icon">🔢</div>
                     <h3 class="program-title" data-en="Number Memory" data-es="Memoria de Números"></h3>
-                    <p class="program-description" data-en="Test and expand your digit span. Memorize increasingly long sequences." data-es="Prueba y expande tu capacidad de dígitos. Memoriza secuencias cada vez más largas."></p>
-                    <span class="free-badge" data-en="🎮 3 Free Tries Daily" data-es="🎮 3 Intentos Gratis Diarios"></span>
+                    <p class="program-description" data-en="Memorize increasingly long number sequences." data-es="Memoriza secuencias de números cada vez más largas."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
                     <div class="game-lang-buttons">
                         <a href="https://hooporiapr-oss.github.io/number-memory/" class="game-lang-btn english">🇺🇸 English</a>
                         <a href="https://hooporiapr-oss.github.io/number-memory-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
@@ -117,10 +122,10 @@
                 </div>
                 <!-- Sequence Memory -->
                 <div class="program-card">
-                    <div class="program-icon">🎯</div>
+                    <div class="program-icon">🎹</div>
                     <h3 class="program-title" data-en="Sequence Memory" data-es="Memoria de Secuencia"></h3>
-                    <p class="program-description" data-en="Master sequential patterns. Watch colored buttons light up and repeat accurately." data-es="Domina patrones secuenciales. Observa los botones iluminarse y repite con precisión."></p>
-                    <span class="free-badge" data-en="🎮 3 Free Tries Daily" data-es="🎮 3 Intentos Gratis Diarios"></span>
+                    <p class="program-description" data-en="Watch tiles light up and repeat the pattern." data-es="Observa las casillas iluminarse y repite el patrón."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
                     <div class="game-lang-buttons">
                         <a href="https://hooporiapr-oss.github.io/akashic-sequence/" class="game-lang-btn english">🇺🇸 English</a>
                         <a href="https://hooporiapr-oss.github.io/sequence-memory-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
@@ -130,19 +135,35 @@
                 <div class="program-card">
                     <div class="program-icon">🃏</div>
                     <h3 class="program-title" data-en="Memory Match" data-es="Parejas de Memoria"></h3>
-                    <p class="program-description" data-en="Classic pairs matching. Find all matching pairs in the shortest time possible." data-es="Juego clásico de emparejar. Encuentra todos los pares en el menor tiempo posible."></p>
-                    <span class="free-badge" data-en="🎮 3 Free Tries Daily" data-es="🎮 3 Intentos Gratis Diarios"></span>
+                    <p class="program-description" data-en="Find matching pairs in the shortest time." data-es="Encuentra las parejas en el menor tiempo."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
                     <div class="game-lang-buttons">
                         <a href="https://hooporiapr-oss.github.io/memory-match/" class="game-lang-btn english">🇺🇸 English</a>
                         <a href="https://hooporiapr-oss.github.io/memory-match-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
                     </div>
                 </div>
+                <!-- Visual Memory - NEW -->
+                <div class="program-card">
+                    <div class="program-icon">👁️</div>
+                    <h3 class="program-title"><span data-en="Visual Memory" data-es="Memoria Visual"></span><span class="new-badge">NEW</span></h3>
+                    <p class="program-description" data-en="Remember which tiles lit up on the grid." data-es="Recuerda qué casillas se iluminaron."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
+                    <div class="game-lang-buttons">
+                        <a href="https://hooporiapr-oss.github.io/visual-memory-pin/" class="game-lang-btn english">🇺🇸 English</a>
+                        <a href="https://hooporiapr-oss.github.io/visual-memory-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SPEED & REFLEXES -->
+            <h2 class="section-title" data-en="⚡ Speed & Reflexes" data-es="⚡ Velocidad y Reflejos"></h2>
+            <div class="programs-grid">
                 <!-- Reaction Time -->
                 <div class="program-card">
                     <div class="program-icon">⚡</div>
                     <h3 class="program-title" data-en="Reaction Time" data-es="Tiempo de Reacción"></h3>
-                    <p class="program-description" data-en="Measure and improve your reaction speed with 5 attempts per session." data-es="Mide y mejora tu velocidad de reacción con 5 intentos por sesión."></p>
-                    <span class="free-badge" data-en="🎮 3 Free Tries Daily" data-es="🎮 3 Intentos Gratis Diarios"></span>
+                    <p class="program-description" data-en="Test your reaction speed in milliseconds." data-es="Mide tu velocidad de reacción en milisegundos."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
                     <div class="game-lang-buttons">
                         <a href="https://hooporiapr-oss.github.io/akashic-reaction-time/" class="game-lang-btn english">🇺🇸 English</a>
                         <a href="https://hooporiapr-oss.github.io/reaction-time-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
@@ -151,62 +172,109 @@
                 <!-- Aim Trainer -->
                 <div class="program-card">
                     <div class="program-icon">🎯</div>
-                    <h3 class="program-title" data-en="Aim Trainer" data-es="Entrenamiento de Reflejos"></h3>
-                    <p class="program-description" data-en="30 seconds of intense focus. Click targets and test your hand-eye coordination." data-es="30 segundos de enfoque intenso. Haz clic en objetivos y prueba tu coordinación."></p>
-                    <span class="free-badge" data-en="🎮 3 Free Tries Daily" data-es="🎮 3 Intentos Gratis Diarios"></span>
+                    <h3 class="program-title" data-en="Aim Trainer" data-es="Entrenamiento de Puntería"></h3>
+                    <p class="program-description" data-en="Click targets quickly to test coordination." data-es="Haz clic en objetivos para probar tu coordinación."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
                     <div class="game-lang-buttons">
                         <a href="https://hooporiapr-oss.github.io/aim-trainer-pin/" class="game-lang-btn english">🇺🇸 English</a>
                         <a href="https://hooporiapr-oss.github.io/aim-trainer-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
                     </div>
                 </div>
-                <!-- Word Search -->
+            </div>
+
+            <!-- COGNITIVE CONTROL -->
+            <h2 class="section-title" data-en="🎨 Cognitive Control" data-es="🎨 Control Cognitivo"></h2>
+            <div class="programs-grid">
+                <!-- Color Match - NEW -->
+                <div class="program-card">
+                    <div class="program-icon">🎨</div>
+                    <h3 class="program-title"><span data-en="Color Match" data-es="Colores y Palabras"></span><span class="new-badge">NEW</span></h3>
+                    <p class="program-description" data-en="Does the word match its color? Test your focus!" data-es="¿La palabra coincide con su color? ¡Prueba tu enfoque!"></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
+                    <div class="game-lang-buttons">
+                        <a href="https://hooporiapr-oss.github.io/color-match-pin/" class="game-lang-btn english">🇺🇸 English</a>
+                        <a href="https://hooporiapr-oss.github.io/color-match-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
+                    </div>
+                </div>
+                <!-- Odd One Out - NEW -->
                 <div class="program-card">
                     <div class="program-icon">🔍</div>
+                    <h3 class="program-title"><span data-en="Odd One Out" data-es="Encuentra el Diferente"></span><span class="new-badge">NEW</span></h3>
+                    <p class="program-description" data-en="Find the tile with a different shade." data-es="Encuentra la casilla con un tono diferente."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
+                    <div class="game-lang-buttons">
+                        <a href="https://hooporiapr-oss.github.io/odd-one-out-pin/" class="game-lang-btn english">🇺🇸 English</a>
+                        <a href="https://hooporiapr-oss.github.io/odd-one-out-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGIC & LANGUAGE -->
+            <h2 class="section-title" data-en="🧩 Logic & Language" data-es="🧩 Lógica y Lenguaje"></h2>
+            <div class="programs-grid">
+                <!-- Pattern Recognition - NEW -->
+                <div class="program-card">
+                    <div class="program-icon">🧩</div>
+                    <h3 class="program-title"><span data-en="Pattern Recognition" data-es="Reconoce el Patrón"></span><span class="new-badge">NEW</span></h3>
+                    <p class="program-description" data-en="Find the next symbol in the sequence." data-es="Encuentra el siguiente símbolo en la secuencia."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
+                    <div class="game-lang-buttons">
+                        <a href="https://hooporiapr-oss.github.io/pattern-recognition-pin/" class="game-lang-btn english">🇺🇸 English</a>
+                        <a href="https://hooporiapr-oss.github.io/pattern-recognition-pin-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
+                    </div>
+                </div>
+                <!-- Word Search -->
+                <div class="program-card">
+                    <div class="program-icon">📝</div>
                     <h3 class="program-title" data-en="Word Search" data-es="Sopa de Letras"></h3>
-                    <p class="program-description" data-en="Find hidden words in a letter grid. Test your visual scanning and vocabulary." data-es="Encuentra palabras escondidas. Prueba tu escaneo visual y vocabulario."></p>
-                    <span class="free-badge" data-en="🎮 3 Free Tries Daily" data-es="🎮 3 Intentos Gratis Diarios"></span>
+                    <p class="program-description" data-en="Find hidden words in a letter grid." data-es="Encuentra palabras escondidas en la cuadrícula."></p>
+                    <span class="free-badge" data-en="🎮 3 Free Daily" data-es="🎮 3 Gratis Diarios"></span>
                     <div class="game-lang-buttons">
                         <a href="https://hooporiapr-oss.github.io/word-search/" class="game-lang-btn english">🇺🇸 English</a>
                         <a href="https://hooporiapr-oss.github.io/word-search-es/" class="game-lang-btn spanish">🇵🇷 Español</a>
                     </div>
                 </div>
             </div>
-            <div style="background:rgba(255,255,255,0.05);border:3px solid rgba(212,175,55,0.5);border-radius:20px;padding:50px 40px;text-align:center;margin-top:60px;">
-                <h2 style="color:#ffd700;font-size:2.5em;margin-bottom:30px;" data-en="Want Unlimited Access?" data-es="¿Quieres Acceso Ilimitado?"></h2>
-                <div style="font-size:3.5em;color:#ffd700;font-weight:bold;margin-bottom:15px;">$19.99<span style="font-size:0.4em;color:#b8b8cc;" data-en="/year" data-es="/año"></span></div>
-                <p style="color:#51cf66;font-size:1.3em;font-weight:bold;margin-bottom:30px;" data-en="Unlimited sessions on all 6 programs" data-es="Sesiones ilimitadas en los 6 programas"></p>
+
+            <!-- Pricing Section -->
+            <div style="background:rgba(255,255,255,0.05);border:3px solid rgba(212,175,55,0.5);border-radius:20px;padding:40px 30px;text-align:center;margin-top:50px;">
+                <h2 style="color:#ffd700;font-size:2.2em;margin-bottom:25px;" data-en="Want Unlimited Access?" data-es="¿Quieres Acceso Ilimitado?"></h2>
+                <div style="font-size:3em;color:#ffd700;font-weight:bold;margin-bottom:12px;">$19.99<span style="font-size:0.4em;color:#b8b8cc;" data-en="/year" data-es="/año"></span></div>
+                <p style="color:#51cf66;font-size:1.2em;font-weight:bold;margin-bottom:25px;" data-en="Unlimited sessions on all 10 programs" data-es="Sesiones ilimitadas en los 10 programas"></p>
                 <div class="cta-buttons">
                     <a href="mailto:support@akashic.works?subject=Upgrade%20Request" class="btn btn-primary"><span data-en="Upgrade Now" data-es="Mejorar Ahora"></span></a>
                 </div>
-                <p style="color:#b8b8cc;margin-top:20px;font-size:1.1em;" data-en="💡 Try all 6 programs free first, then upgrade!" data-es="💡 ¡Prueba los 6 programas gratis primero, luego mejora!"></p>
+                <p style="color:#b8b8cc;margin-top:18px;font-size:1em;" data-en="💡 Try all 10 programs free first, then upgrade!" data-es="💡 ¡Prueba los 10 programas gratis primero!"></p>
             </div>
         </div>
+
+        <!-- FACILITIES TAB -->
         <div class="tab-content" id="facilitiesContent">
             <div class="healthcare-hero">
                 <div class="healthcare-icon">🏥</div>
                 <h2 data-en="Cognitive Training for Healthcare Facilities" data-es="Entrenamiento Cognitivo para Centros de Salud"></h2>
-                <p style="font-size:1.4em;color:#c4c4d8;margin-bottom:30px;" data-en="Affordable, unlimited cognitive training for assisted living, memory care, and nursing facilities" data-es="Entrenamiento cognitivo asequible e ilimitado para residencias asistidas, centros de memoria y enfermería"></p>
+                <p style="font-size:1.3em;color:#c4c4d8;margin-bottom:25px;" data-en="Affordable, unlimited cognitive training for assisted living, memory care, and nursing facilities" data-es="Entrenamiento cognitivo asequible e ilimitado para residencias asistidas y centros de memoria"></p>
             </div>
             <div class="healthcare-features">
                 <div class="feature-box">
                     <div class="feature-box-icon">💰</div>
                     <h3 data-en="99% Cost Reduction" data-es="99% Reducción de Costos"></h3>
-                    <p data-en="$99.99-399.99/year vs. $90K-180K traditional therapy" data-es="$99.99-399.99/año vs. $90K-180K terapia tradicional"></p>
+                    <p data-en="$99-399/year vs. $90K-180K traditional therapy" data-es="$99-399/año vs. $90K-180K terapia tradicional"></p>
                 </div>
                 <div class="feature-box">
                     <div class="feature-box-icon">🌎</div>
                     <h3 data-en="Fully Bilingual" data-es="Completamente Bilingüe"></h3>
-                    <p data-en="English + Spanish interface, perfect for Puerto Rico" data-es="Interfaz inglés + español, perfecto para Puerto Rico"></p>
+                    <p data-en="English + Spanish, perfect for Puerto Rico" data-es="Inglés + Español, perfecto para Puerto Rico"></p>
                 </div>
                 <div class="feature-box">
                     <div class="feature-box-icon">👥</div>
                     <h3 data-en="Unlimited Access" data-es="Acceso Ilimitado"></h3>
-                    <p data-en="All residents can train 24/7, minimal supervision" data-es="Todos los residentes pueden entrenar 24/7, supervisión mínima"></p>
+                    <p data-en="All residents can train 24/7" data-es="Todos los residentes pueden entrenar 24/7"></p>
                 </div>
                 <div class="feature-box">
                     <div class="feature-box-icon">📊</div>
-                    <h3 data-en="Progress Tracking" data-es="Seguimiento de Progreso"></h3>
-                    <p data-en="Document cognitive activity for Medicare & families" data-es="Documente actividad cognitiva para Medicare y familias"></p>
+                    <h3 data-en="10 Programs" data-es="10 Programas"></h3>
+                    <p data-en="Complete cognitive training suite" data-es="Suite completa de entrenamiento cognitivo"></p>
                 </div>
             </div>
             <div class="savings-badge" data-en="💰 Save $88,000 - $178,000 Per Year" data-es="💰 Ahorre $88,000 - $178,000 Por Año"></div>
@@ -216,20 +284,20 @@
                     <div class="price-tier">
                         <div class="price-tier-name" data-en="Starter" data-es="Básico"></div>
                         <div class="price-tier-price">$99.99<span data-en="/year" data-es="/año"></span></div>
-                        <div style="color:#b8b8cc;margin:10px 0;" data-en="Up to 25 residents" data-es="Hasta 25 residentes"></div>
-                        <div class="price-tier-per" data-en="$4.00 per resident/year" data-es="$4.00 por residente/año"></div>
+                        <div style="color:#b8b8cc;margin:8px 0;" data-en="Up to 25 residents" data-es="Hasta 25 residentes"></div>
+                        <div class="price-tier-per" data-en="$4.00/resident/year" data-es="$4.00/residente/año"></div>
                     </div>
                     <div class="price-tier">
                         <div class="price-tier-name" data-en="Standard ⭐" data-es="Estándar ⭐"></div>
                         <div class="price-tier-price">$199.99<span data-en="/year" data-es="/año"></span></div>
-                        <div style="color:#b8b8cc;margin:10px 0;" data-en="Up to 75 residents" data-es="Hasta 75 residentes"></div>
-                        <div class="price-tier-per" data-en="$2.67 per resident/year" data-es="$2.67 por residente/año"></div>
+                        <div style="color:#b8b8cc;margin:8px 0;" data-en="Up to 75 residents" data-es="Hasta 75 residentes"></div>
+                        <div class="price-tier-per" data-en="$2.67/resident/year" data-es="$2.67/residente/año"></div>
                     </div>
                     <div class="price-tier">
                         <div class="price-tier-name" data-en="Premium" data-es="Premium"></div>
                         <div class="price-tier-price">$399.99<span data-en="/year" data-es="/año"></span></div>
-                        <div style="color:#b8b8cc;margin:10px 0;" data-en="Up to 200 residents" data-es="Hasta 200 residentes"></div>
-                        <div class="price-tier-per" data-en="$2.00 per resident/year" data-es="$2.00 por residente/año"></div>
+                        <div style="color:#b8b8cc;margin:8px 0;" data-en="Up to 200 residents" data-es="Hasta 200 residentes"></div>
+                        <div class="price-tier-per" data-en="$2.00/resident/year" data-es="$2.00/residente/año"></div>
                     </div>
                 </div>
             </div>
@@ -238,15 +306,16 @@
                 <a href="mailto:support@akashic.works?subject=Facility%20Information" class="btn btn-secondary"><span data-en="📄 Request Info" data-es="📄 Solicitar Info"></span></a>
             </div>
         </div>
+
+        <!-- Footer -->
         <div class="footer">
-            <p style="font-size:1.3em;color:#ffd700;margin-bottom:20px;" data-en="🧠 Start training your mind today" data-es="🧠 Comienza a entrenar tu mente hoy"></p>
+            <p style="font-size:1.2em;color:#ffd700;margin-bottom:15px;" data-en="🧠 Start training your mind today" data-es="🧠 Comienza a entrenar tu mente hoy"></p>
             <p>&copy; 2024 Akashic Works. <span data-en="All rights reserved." data-es="Todos los derechos reservados."></span></p>
             <div class="footer-links">
                 <a href="mailto:support@akashic.works" data-en="Contact Support" data-es="Contactar Soporte"></a>
                 <a href="privacy-policy.html" data-en="Privacy Policy" data-es="Política de Privacidad"></a>
                 <a href="terms-of-service.html" data-en="Terms of Service" data-es="Términos de Servicio"></a>
             </div>
-            <p style="margin-top:20px;font-size:0.9em;" data-en="Train smarter, not harder. 🎯" data-es="Entrena más inteligente, no más duro. 🎯"></p>
         </div>
     </div>
     <script>
